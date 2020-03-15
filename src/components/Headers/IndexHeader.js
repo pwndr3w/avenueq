@@ -5,9 +5,7 @@ import React from "react";
 import { Container } from "reactstrap";
 // core components
 
-function isMobileDevice() {
-  return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-};
+import {isMobile} from 'react-device-detect';
 
 function IndexHeader() {
   let pageHeader = React.createRef();
@@ -25,7 +23,7 @@ function IndexHeader() {
       };
     }
   });
-  if (isMobileDevice) {
+  if (isMobile) {
     return (
       <>
         <div className="page-header clear-filter" filter-color="green">
