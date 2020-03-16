@@ -15,129 +15,24 @@ function Download() {
       >
         <Container>
           <Row className="justify-content-md-center">
-            <Col className="text-center" lg="8" md="12">
-              <h3 className="title">Do you love this Bootstrap 4 UI Kit?</h3>
+            <Col className="text-center" lg="12" md="12">
+              <h3 className="title">Synopsis</h3>
               <h5 className="description">
-                Cause if you do, it can be yours for FREE. Hit the button below
-                to navigate to Creative Tim or Invision where you can find the
-                kit in HTML or Sketch/PSD format. Start a new project or give an
-                old Bootstrap project a new look!
+              별나지만 멋진 이웃들이 함께 살아가는곳, Avenue Q!
+              <br></br>
+              <br></br>
+
+              뉴욕의 번화가와 고급스러운 유행의 중심지에서 가장 멀리 떨어져있는 애비뉴 Q! 지금 막~ 대학을 졸업해 눈이 반짝이는 청년 프린스턴이 이곳으로 이사를 왔군요! 
+              그러나 쓸모 없는 영문학과 졸업장과 바닥난 통장잔고로 애비뉴 Q의 생활이 만만치 않네요!
+              <br></br>
+              <br></br>
+
+              그곳에는 별나고 멋진 이웃들이 살고 있군요. 소울메이트를 찾는 만년 싱글인 유치원 보조교사 케이트, 남자와 섹스에만 관심 있는 금발의 글래머 클럽가수 루시, 
+              게이임을 감추고 사는 평범한 직장인 로드, 그에게 빈대 붙어 사는 룸메이트 니키, 코미디언 지망생 브라이언과 약혼녀 크리스마스 이브, 야동에 빠진 트레키 몬스터까지! 
+              <br></br>
+              <br></br>
+              그들이 펼치는 그 유쾌한 이야기 속으로 안내합니다!
               </h5>
-            </Col>
-            <Col className="text-center" lg="8" md="12">
-              <Button
-                className="btn-round mr-1"
-                color="info"
-                href="https://www.creative-tim.com/product/now-ui-kit-react?ref=nukr-index-page"
-                role="button"
-                size="lg"
-              >
-                Download React
-              </Button>
-              <Button
-                className="btn-round"
-                color="primary"
-                href="https://www.invisionapp.com/now?ref=creativetim"
-                outline
-                role="button"
-                size="lg"
-                target="_blank"
-              >
-                Download PSD/Sketch
-              </Button>
-            </Col>
-          </Row>
-          <br></br>
-          <br></br>
-          <br></br>
-          <Row className="text-center mt-5">
-            <Col className="ml-auto mr-auto" md="8">
-              <h2>Want more?</h2>
-              <h5 className="description">
-                We're going to launch{" "}
-                <a
-                  href="http://demos.creative-tim.com/now-ui-kit-pro-react/#/presentation?ref=nukr-index-page"
-                  onClick={e => e.preventDefault()}
-                >
-                  Now UI Kit PRO React
-                </a>
-                . It will have huge number of components, sections and example
-                pages so you can start your development with a badass Bootstrap
-                4 UI Kit.
-              </h5>
-            </Col>
-            <Col md="12">
-              <Button
-                className="btn-neutral btn-round"
-                color="default"
-                href="http://demos.creative-tim.com/now-ui-kit-pro-react/#/presentation?ref=nukr-index-page"
-                size="lg"
-                disabled
-              >
-                <i className="now-ui-icons arrows-1_share-66 mr-1"></i>
-                Upgrade to PRO
-              </Button>
-            </Col>
-          </Row>
-          <br></br>
-          <br></br>
-          <Row className="justify-content-md-center sharing-area text-center">
-            <Col className="text-center" lg="8" md="12">
-              <h3>Thank you for supporting us!</h3>
-            </Col>
-            <Col className="text-center" lg="8" md="12">
-              <Button
-                className="btn-neutral btn-icon btn-round"
-                color="twitter"
-                href="https://www.twitter.com/creativetim?ref=creativetim"
-                id="tooltip86114138"
-                size="lg"
-                target="_blank"
-              >
-                <i className="fab fa-twitter"></i>
-              </Button>
-              <UncontrolledTooltip delay={0} target="tooltip86114138">
-                Follow us
-              </UncontrolledTooltip>
-              <Button
-                className="btn-neutral btn-icon btn-round"
-                color="facebook"
-                href="https://www.facebook.com/creativetim?ref=creativetim"
-                id="tooltip735272548"
-                size="lg"
-                target="_blank"
-              >
-                <i className="fab fa-facebook-square"></i>
-              </Button>
-              <UncontrolledTooltip delay={0} target="tooltip735272548">
-                Like us
-              </UncontrolledTooltip>
-              <Button
-                className="btn-neutral btn-icon btn-round"
-                color="linkedin"
-                href="https://www.linkedin.com/company-beta/9430489/?ref=creativetim"
-                id="tooltip647117716"
-                size="lg"
-                target="_blank"
-              >
-                <i className="fab fa-linkedin"></i>
-              </Button>
-              <UncontrolledTooltip delay={0} target="tooltip647117716">
-                Follow us
-              </UncontrolledTooltip>
-              <Button
-                className="btn-neutral btn-icon btn-round"
-                color="github"
-                href="https://github.com/creativetimofficial/now-ui-kit-react?ref=creativetim"
-                id="tooltip331904895"
-                size="lg"
-                target="_blank"
-              >
-                <i className="fab fa-github"></i>
-              </Button>
-              <UncontrolledTooltip delay={0} target="tooltip331904895">
-                Star on Github
-              </UncontrolledTooltip>
             </Col>
           </Row>
         </Container>

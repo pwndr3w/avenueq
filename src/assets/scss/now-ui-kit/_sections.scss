@@ -7,6 +7,16 @@
         margin-top: $margin-base-vertical;
     }
 }
+
+#cast-section{
+    padding: 70px 0;
+    position: relative;
+    background: $light-gray;
+
+    .row + .category{
+        margin-top: $margin-base-vertical;
+    }
+}
 .section-navbars{
     padding-bottom: 0;
 }

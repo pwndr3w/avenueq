@@ -17,6 +17,7 @@ import {
   UncontrolledTooltip
 } from "reactstrap";
 import { createTemplateMiddle } from "typescript";
+import { isMobile } from "react-device-detect";
 function IndexNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
@@ -60,10 +61,11 @@ function IndexNavbar() {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
-              href="https://demos.creative-tim.com/now-ui-kit-react/#/index?ref=nukr-index-navbar"
+              href="#"
               target="_blank"
               id="navbar-brand"
             >
+              <img src={require("assets/img/logo.png")} width="80px"></img>
               Avenue Q
             </NavbarBrand>
             <button
@@ -151,19 +153,6 @@ function IndexNavbar() {
                   <i className="fas fa-2x fa-ticket-alt design_app mr-1" style={menuIconStyle}></i>
                   <h6 style={menuTextStyle}>Tickets</h6>
                 </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
-                  target="_blank"
-                  id="instagram-tooltip"
-                >
-                  <i className="fab fa-instagram"></i>
-                  <p className="d-lg-none d-xl-none">Instagram</p>
-                </NavLink>
-                <UncontrolledTooltip target="#instagram-tooltip">
-                  Follow us on Instagram
-                </UncontrolledTooltip>
               </NavItem>
             </Nav>
           </Collapse>

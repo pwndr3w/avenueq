@@ -2569,7 +2569,7 @@ p {
 .description,
 .card-description,
 .footer-big p {
-  color: #9A9A9A;
+  color: rgb(31, 25, 25);
   font-weight: 300; }
 
 .category {
