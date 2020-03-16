@@ -24,14 +24,14 @@ function CastImgLayout({src}) {
 function CastDetail(props) {
     return (
         <>
-            <Row className="justify-content-md-center">
+            <Row className="justify-content-center">
                 <Col className="text-center" lg="12" md="12">
                     <h1 className="title">{props.castName}</h1>
                 </Col>
             </Row>
             <br></br>      
             <br></br>      
-            <Row className="justify-content-md-center">
+            <Row className="justify-content-center">
                 {props.src.map(src => (
                     <CastImgLayout src={src}/>  
                 ))}

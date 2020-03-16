@@ -40,14 +40,10 @@ function IndexHeader() {
             ref={pageHeader}
           ></div>
           <Container>
-            <div className="content-center brand">
-              {/* <img
-                alt="..."
-                className="n-logo"
-                src={require("assets/img/now-logo.png")}
-              ></img> */}
-              <h1 className="h1-seo">Welcome to Avenue Q!</h1>
-              <h3>A beautiful Bootstrap 4 UI kit. Yours free.</h3>
+            <div className="content-bottom brand">
+              <Button href="https://naver.com" className="btn-round" color="white" outline type="button" style={ticketStyle}>
+                Ticket Here!!
+              </Button>
             </div>
           </Container>
         </div>
@@ -66,11 +62,6 @@ function IndexHeader() {
           ></div>
           <Container>
             <div className="content-center brand">
-              {/* <img
-                alt="..."
-                className="n-logo"
-                src={require("assets/img/now-logo.png")}
-              ></img> */}
               <h1 className="h1-seo">Welcome to Avenue Q!</h1>
               <Button href="https://naver.com" className="btn-round" color="white" outline type="button" style={ticketStyle}>
                 Ticket Here!!

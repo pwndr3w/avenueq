@@ -25,6 +25,7 @@ import SignUp from "./index-sections/SignUp.js";
 import Examples from "./index-sections/Examples.js";
 import Download from "./index-sections/Download.js";
 import Cast from "./index-sections/Cast.js";
+import CastingCalendar from "./index-sections/CastingCalendar.js";
 
 function Index() {
   React.useEffect(() => {
@@ -47,18 +48,7 @@ function Index() {
           <CompleteExamples />
           <Download />
           <Cast />
-          <Tabs />
-          <BasicElements />
-          <Navbars />
-          <Images />
-          <Pagination />
-          <Notifications />
-          <Typography />
-          <Javascript />
-          <NucleoIcons />
-          <Examples />
-          <SignUp />
-          <Carousel />
+          <CastingCalendar />
         </div>
         <DarkFooter />
       </div>
