@@ -52,11 +52,11 @@ function IndexHeader() {
   } else {
     return (
       <>
-        <div className="page-header clear-filter" filter-color="green">
+        <div className="page-header clear-filter" filter-color="green" style={{height:'100vh'}}>
           <div
             className="page-header-image"
             style={{
-              backgroundImage: "url(" + require("assets/img/desktopbg.jpeg") + ")"
+              backgroundImage: "url(" + require("assets/img/desktopbg_new.jpeg") + ")"
             }}
             ref={pageHeader}
           ></div>
