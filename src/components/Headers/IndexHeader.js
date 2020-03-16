@@ -31,7 +31,7 @@ function IndexHeader() {
   if (isMobile) {
     return (
       <>
-        <div className="page-header clear-filter" filter-color="green">
+        <div className="page-header clear-filter" filter-color="green" style={{height:'100vh'}}>
           <div
             className="page-header-image"
             style={{

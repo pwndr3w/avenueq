@@ -7,7 +7,7 @@ const dividerStyle = {
 
 const CastingTable = (props) => {
   return (
-      <Table responsive style={{ textAlign: 'center', color:"white" }}>
+      <Table responsive style={{ textAlign: 'center', color:"white", whiteSpace:"nowrap" }}>
       <thead>
         <tr>
           <th>날짜</th>

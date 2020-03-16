@@ -66,7 +66,8 @@ function IndexNavbar() {
               id="navbar-brand"
             >
               <img src={require("assets/img/logo.png")} width="80px"></img>
-              Avenue Q
+              {isMobile ? "" : "Avenue Q"}
+
             </NavbarBrand>
             <button
               className="navbar-toggler navbar-toggler"

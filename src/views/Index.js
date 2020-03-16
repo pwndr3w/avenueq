@@ -20,13 +20,13 @@ import Typography from "./index-sections/Typography.js";
 import Javascript from "./index-sections/Javascript.js";
 import Carousel from "./index-sections/Carousel.js";
 import NucleoIcons from "./index-sections/NucleoIcons.js";
-import CompleteExamples from "./index-sections/CompleteExamples.js";
 import SignUp from "./index-sections/SignUp.js";
 import Examples from "./index-sections/Examples.js";
-import Download from "./index-sections/Download.js";
 import Cast from "./index-sections/Cast.js";
 import CastingCalendar from "./index-sections/CastingCalendar.js";
 import CreativeTeam from "./index-sections/CreativeTeam.js";
+import About from "./index-sections/About.js";
+import Synopsis from "./index-sections/Synopsis.js";
 
 function Index() {
   React.useEffect(() => {
@@ -46,8 +46,8 @@ function Index() {
       <div className="wrapper">
         <IndexHeader />
         <div className="main">
-          <CompleteExamples />
-          <Download />
+          <About />
+          <Synopsis />
           <Cast />
           <CastingCalendar />
           <CreativeTeam />
