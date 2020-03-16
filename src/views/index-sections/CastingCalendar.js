@@ -21,6 +21,7 @@ const CastingTable = (props) => {
           <th>Gary</th>
           <th>Lucy</th>
           <th>Trekky</th>
+          <th>Bears</th>
         </tr>
       </thead>
       <tbody>
@@ -36,6 +37,7 @@ const CastingTable = (props) => {
           <td>김설이</td>
           <td>안상현</td>
           <td>김무준</td>
+          <td>김재혁&박은영</td>
         </tr>
         <tr>
           <th scope="row">4.25(토)</th>
@@ -49,6 +51,7 @@ const CastingTable = (props) => {
           <td>김지언</td>
           <td>안상현</td>
           <td>유병선</td>
+          <td>윤한솔&이한솜</td>
         </tr>
         <tr>
           <th scope="row">4.25(토)</th>
@@ -62,6 +65,7 @@ const CastingTable = (props) => {
           <td>김설이</td>
           <td>안상현</td>
           <td>김무준</td>
+          <td>김민성&조희령</td>
         </tr>
         <tr>
           <th scope="row">4.26(일)</th>
@@ -75,6 +79,7 @@ const CastingTable = (props) => {
           <td>김지언</td>
           <td>안상현</td>
           <td>유병선</td>
+          <td>윤한솔&이한솜</td>
         </tr>
         <tr>
           <th scope="row">4.26(일)</th>
@@ -88,6 +93,7 @@ const CastingTable = (props) => {
           <td>김설이</td>
           <td>안상현</td>
           <td>김무준</td>
+          <td>김재혁&박은영</td>
         </tr>
         <tr>
           <th scope="row">4.26(일)</th>
@@ -101,6 +107,7 @@ const CastingTable = (props) => {
           <td>김지언</td>
           <td>안상현</td>
           <td>유병선</td>
+          <td>박국희&이기림</td>
         </tr>
       </tbody>
     </Table>
