@@ -7,7 +7,7 @@ const dividerStyle = {
 
 const CastingTable = (props) => {
   return (
-      <Table responsive dark style={{ textAlign: 'center' }}>
+      <Table responsive style={{ textAlign: 'center', color:"white" }}>
       <thead>
         <tr>
           <th>날짜</th>
@@ -110,15 +110,15 @@ const CastingTable = (props) => {
 function CastingCalendar() {
     return (
         <>
-                  <div
+    <div
         className="section"
-        background-color="#d09c59"
+        style={{backgroundColor : "#df5d07"}}
         id="calendar-section"
       >
         <Container>
             <Row className="justify-content-md-center">
                 <Col className="text-center" lg="12" md="12">
-                          <h1 className="title">Casting Calendar</h1>
+                            <h1 className="title" style={{color:"white"}}>Casting Calendar</h1>
                           
                 </Col>
                     </Row>    

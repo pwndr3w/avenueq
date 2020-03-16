@@ -69,6 +69,7 @@ function Cast() {
                   <CastDetail castName="Gary" src={["김설이","김지언"]}/>
                   <CastDetail castName="Lucy" src={["안상현"]}/>
                   <CastDetail castName="Trekky" src={["김무준","유병선"]}/>
+                  <CastDetail castName="Bed Idea Bears & Emsemble" src={["김재혁","박은영","김민성","조희령","윤한솔","이한솜","박국희","이기림"]}/>
                                     
         </Container>
       </div>

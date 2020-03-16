@@ -26,6 +26,7 @@ import Examples from "./index-sections/Examples.js";
 import Download from "./index-sections/Download.js";
 import Cast from "./index-sections/Cast.js";
 import CastingCalendar from "./index-sections/CastingCalendar.js";
+import CreativeTeam from "./index-sections/CreativeTeam.js";
 
 function Index() {
   React.useEffect(() => {
@@ -49,6 +50,7 @@ function Index() {
           <Download />
           <Cast />
           <CastingCalendar />
+          <CreativeTeam />
         </div>
         <DarkFooter />
       </div>
