@@ -2,10 +2,15 @@
 import React from "react";
 
 // reactstrap components
-import { Container } from "reactstrap";
+import { Container, Button } from "reactstrap";
 // core components
 
 import {isMobile} from 'react-device-detect';
+
+const ticketStyle = {
+  border: '2px solid',
+  fontSize: '1.35em'
+}
 
 function IndexHeader() {
   let pageHeader = React.createRef();
@@ -67,7 +72,9 @@ function IndexHeader() {
                 src={require("assets/img/now-logo.png")}
               ></img> */}
               <h1 className="h1-seo">Welcome to Avenue Q!</h1>
-              <h3>A beautiful Bootstrap 4 UI kit. Yours free.</h3>
+              <Button href="https://naver.com" className="btn-round" color="white" outline type="button" style={ticketStyle}>
+                Ticket Here!!
+              </Button>
             </div>
           </Container>
         </div>
