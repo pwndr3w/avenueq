@@ -18,6 +18,8 @@ import {
 } from "reactstrap";
 import { createTemplateMiddle } from "typescript";
 import { isMobile } from "react-device-detect";
+
+
 function IndexNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
@@ -25,7 +27,7 @@ function IndexNavbar() {
     const updateNavbarColor = () => {
       if (
         document.documentElement.scrollTop > 399 ||
-        document.body.scrollTop > 399
+        document.body.scrollTop > 399 || collapseOpen
       ) {
         setNavbarColor("");
       } else if (
@@ -57,7 +59,7 @@ function IndexNavbar() {
           }}
         />
       ) : null}
-      <Navbar className={"fixed-top " + navbarColor} expand="lg" color="primary">
+      <Navbar className={"fixed-top " + (collapseOpen ? "" : navbarColor)} expand="lg" color="primary">
         <Container>
           <div className="navbar-translate">
             <NavbarBrand

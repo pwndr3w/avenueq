@@ -92,33 +92,33 @@
 
     }
 
-    // .bar1,
-    // .bar2,
-    // .bar3 {
-    //   outline: 1px solid transparent;
-    // }
-    // .bar1 {
-    //   top: 0px;
-    //   @include bar-animation($topbar-back);
-    // }
-    // .bar2 {
-    //   opacity: 1;
-    // }
-    // .bar3 {
-    //   bottom: 0px;
-    //   @include bar-animation($bottombar-back);
-    // }
-    // .toggled .bar1 {
-    //   top: 6px;
-    //   @include bar-animation($topbar-x);
-    // }
-    // .toggled .bar2 {
-    //   opacity: 0;
-    // }
-    // .toggled .bar3 {
-    //   bottom: 6px;
-    //   @include bar-animation($bottombar-x);
-    // }
+    .bar1,
+    .bar2,
+    .bar3 {
+      outline: 1px solid transparent;
+    }
+    .bar1 {
+      top: 0px;
+      @include bar-animation($topbar-back);
+    }
+    .bar2 {
+      opacity: 1;
+    }
+    .bar3 {
+      bottom: 0px;
+      @include bar-animation($bottombar-back);
+    }
+    .toggled .bar1 {
+      top: 6px;
+      @include bar-animation($topbar-x);
+    }
+    .toggled .bar2 {
+      opacity: 0;
+    }
+    .toggled .bar3 {
+      bottom: 6px;
+      @include bar-animation($bottombar-x);
+    }
 
   .top-bar {
     transform: rotate(0);
@@ -178,21 +178,23 @@
     .navbar-collapse{
         position: fixed;
         display: block !important;
-        top: 0;
-        height: 100% !important;
-        width: 300px;
+        top: 10%;
+        height: 27% !important;
+        width: -webkit-fill-available;
         right: 0;
         z-index: 1032;
         visibility: visible;
-        background-color: #999;
+        background-color: white;
         overflow-y: visible;
         border-top: none;
-        text-align: left;
+        text-align: center;
 
         max-height: none !important;
 
-        @include transform-translate-x(300px);
-        @include transition (0.50s, cubic-bezier(0.685, 0.0473, 0.346, 1));
+        @include transform-translate-y(-600px);
+//        @include transition (0.50s, cubic-bezier(0.685, 0.0473, 0.346, 1));
+//        @include transition (0.50s, ease-in-out);
+        @include bar-animation($bottombar-back);
 
         &:before{
             background: $brand-primary; /* For browsers that do not support gradients */
@@ -200,7 +202,7 @@
             background: -o-linear-gradient($brand-primary 0%, #000 80%); /* For Opera 11.1 to 12.0 */
             background: -moz-linear-gradient($brand-primary 0%, #000 80%); /* For Firefox 3.6 to 15 */
             background: linear-gradient($brand-primary 0%, #000 80%); /* Standard syntax (must be last) */
-            @include opacity(.76);
+            @include opacity(1);
 
             display: block;
             content: "";
@@ -232,7 +234,7 @@
 
 
     [class*="navbar-expand-"] .navbar-collapse{
-        width: 300px;
+        width: -webkit-fill-available;
     }
 
     .wrapper{
@@ -244,7 +246,7 @@
         width: 100%;
         position: fixed;
         opacity: 1;
-        top: 0;
+        top: 0px;
         left: auto;
         right: 300px;
         content: "";

@@ -4578,8 +4578,8 @@ img {
     position: fixed;
     display: block !important;
     top: 0;
-    height: 100% !important;
-    width: 300px;
+    height: 27% !important;
+    width: -webkit-available;
     right: 0;
     z-index: 1032;
     visibility: visible;

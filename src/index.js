@@ -33,8 +33,8 @@ import ProfilePage from "./views/examples/ProfilePage.js";
 
 ReactDOM.render(
   <HashRouter>
-    <Route path="/" exact="true" component={Index}/>
-    <Route path="/landingPage" exact="true" component={LandingPage}/>
+    <Route path="/" exact={true} component={Index}/>
+    <Route path="/landingPage" exact={true} component={LandingPage}/>
   </HashRouter>,
 
   // <BrowserRouter>

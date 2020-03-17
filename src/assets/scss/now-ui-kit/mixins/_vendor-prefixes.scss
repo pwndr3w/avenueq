@@ -68,9 +68,9 @@ transform: scale($value);
 }
 
 @mixin bar-animation($type){
-     -webkit-animation: $type 500ms linear 0s;
-     -moz-animation: $type 500ms linear 0s;
-     animation: $type 500ms 0s;
+     -webkit-animation: $type 1s linear 1s;
+     -moz-animation: $type 1s linear 1s;
+     animation: $type 1s 1s;
      -webkit-animation-fill-mode: forwards;
      -moz-animation-fill-mode: forwards;
      animation-fill-mode: forwards;
