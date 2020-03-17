@@ -27,7 +27,7 @@ function IndexNavbar() {
     const updateNavbarColor = () => {
       if (
         document.documentElement.scrollTop > 399 ||
-        document.body.scrollTop > 399 || collapseOpen
+        document.body.scrollTop > 399
       ) {
         setNavbarColor("");
       } else if (
@@ -59,7 +59,8 @@ function IndexNavbar() {
           }}
         />
       ) : null}
-      <Navbar className={"fixed-top " + (collapseOpen ? "" : navbarColor)} expand="lg" color="primary">
+      <Navbar className={"fixed-top " + (!collapseOpen&&(document.documentElement.scrollTop < 400 ||
+        document.body.scrollTop < 400) ? navbarColor : "")} expand="lg" color="primary">
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
