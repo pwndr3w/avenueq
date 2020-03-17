@@ -49,10 +49,9 @@ ReactDOM.render(
           render={props => <ProfilePage {...props} />}
         />
         <Route path="/login-page" render={props => <LoginPage {...props} />} />
-        <Redirect to="/index" />
-        <Redirect to="/landing-page" />
-        <Redirect to="/profile-page" />
-        <Redirect to="/index" />
+        <Redirect from="/index" to="/index" />
+        <Redirect from="/landing-page" to="/landing-page" />
+        <Redirect from="profile-page" to="/profile-page" />
         <Redirect from="/" to="/index" />
       </Switch>
     </Switch>
