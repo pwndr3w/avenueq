@@ -28,7 +28,7 @@ import "assets/demo/nucleo-icons-page-styles.css";
 import Index from "./views/Index.js";
 import NucleoIcons from "./views/NucleoIcons.js";
 import LoginPage from "./views/examples/LoginPage.js";
-import LandingPage from "./views/examples/LandingPage.js";
+import LandingPage from "./views/LandingPage.js";
 import ProfilePage from "./views/examples/ProfilePage.js";
 
 ReactDOM.render(
@@ -49,9 +49,7 @@ ReactDOM.render(
           render={props => <ProfilePage {...props} />}
         />
         <Route path="/login-page" render={props => <LoginPage {...props} />} />
-        <Redirect from="/index" to="/index" />
-        <Redirect from="/landing-page" to="/landing-page" />
-        <Redirect from="profile-page" to="/profile-page" />
+        <Redirect to="/index" />
         <Redirect from="/" to="/index" />
       </Switch>
     </Switch>
