@@ -51,6 +51,8 @@ ReactDOM.render(
         <Route path="/login-page" render={props => <LoginPage {...props} />} />
         <Redirect to="/index" />
         <Redirect from="/" to="/index" />
+        <Redirect to="/landing-page" />
+        <Redirect from="/team" to="/landing-page" />
       </Switch>
     </Switch>
   </BrowserRouter>,
