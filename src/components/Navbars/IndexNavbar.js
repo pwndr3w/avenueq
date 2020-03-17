@@ -65,7 +65,7 @@ function IndexNavbar() {
               target="_blank"
               id="navbar-brand"
             >
-              <img src={require("assets/img/logobigsize.png")} width="80px"></img>
+              <img src={require("assets/img/logowhite.png")} width="80px"></img>
               {isMobile ? "" : "Avenue Q"}
 
             </NavbarBrand>
