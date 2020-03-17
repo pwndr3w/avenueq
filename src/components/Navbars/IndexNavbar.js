@@ -68,8 +68,8 @@ function IndexNavbar() {
               target="_blank"
               id="navbar-brand"
             >
-              <img src={require("assets/img/logowhite.png")} width="80px"></img>
-              {isMobile ? "" : "Avenue Q"}
+              <img src={require("assets/img/logowhite.png")} width="50px"></img>
+              {/*isMobile ? "" : "Avenue Q"*/}2020 애비뉴큐
 
             </NavbarBrand>
             <button

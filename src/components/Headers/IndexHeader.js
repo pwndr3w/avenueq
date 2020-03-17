@@ -8,8 +8,9 @@ import { Container, Button } from "reactstrap";
 import {isMobile} from 'react-device-detect';
 
 const ticketStyle = {
-  border: '2px solid',
-  fontSize: '1.35em'
+  fontSize: '1.35em',
+  color: '#e56608',
+  backgroundColor: 'white'
 }
 
 function IndexHeader() {
@@ -35,12 +36,12 @@ function IndexHeader() {
           <div
             className="page-header-image"
             style={{
-              backgroundImage: "url(" + require("assets/img/mobilebg.jpeg") + ")"
+              backgroundImage: "url(" + require("assets/img/desktopbg_new.jpeg") + ")"
             }}
             ref={pageHeader}
           ></div>
           <Container>
-            <div className="content-bottom brand">
+            <div className="content-center brand">
               <Button href="https://naver.com" className="btn-round" color="white" outline type="button" style={ticketStyle}>
                 Ticket Here!!
               </Button>
@@ -63,7 +64,7 @@ function IndexHeader() {
           <Container>
             <div className="content-center brand">
               <h1 className="h1-seo">Welcome to Avenue Q!</h1>
-              <Button href="https://naver.com" className="btn-round" color="white" outline type="button" style={ticketStyle}>
+              <Button href="https://naver.com" className="btn-round" color="white" type="button" style={ticketStyle}>
                 Ticket Here!!
               </Button>
             </div>

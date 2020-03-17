@@ -10,7 +10,7 @@ function CreativeTeam() {
                     <br></br>
             <div className="team">
               <Row className="justify-content-center">
-                <Col md="4" lg="4" sm="4">
+                <Col md="4" lg="4" sm="4" xs="6">
                   <div className="team-player">
                     <img
                       alt="..."
@@ -21,7 +21,7 @@ function CreativeTeam() {
                     <p className="category text-info">연출</p>
                   </div>
                 </Col>
-                <Col md="4" lg="4" sm="4">
+                <Col md="4" lg="4" sm="4" xs="6">
                   <div className="team-player">
                     <img
                       alt="..."
