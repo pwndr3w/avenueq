@@ -29,12 +29,15 @@ import Index from "./views/Index.js";
 import NucleoIcons from "./views/NucleoIcons.js";
 import LoginPage from "./views/examples/LoginPage.js";
 import LandingPage from "./views/LandingPage.js";
+import TeamAInfo from "./views/index-sections/TeamAInfo.js"
+import TeamBInfo from "./views/index-sections/TeamBInfo.js"
 import ProfilePage from "./views/examples/ProfilePage.js";
 
 ReactDOM.render(
   <HashRouter>
     <Route path="/" exact={true} component={Index}/>
-    <Route path="/landingPage" exact={true} component={LandingPage}/>
+    <Route path="/teamA" exact={true} component={TeamAInfo}/>
+    <Route path="/teamB" exact={true} component={TeamBInfo}/>
   </HashRouter>,
 
   // <BrowserRouter>

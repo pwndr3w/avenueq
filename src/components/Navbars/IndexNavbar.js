@@ -64,12 +64,12 @@ function IndexNavbar() {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
-              href="#"
-              target="_blank"
+              href="/"
               id="navbar-brand"
             >
-              <img src={require("assets/img/logowhite.png")} width="50px"></img>
-              {/*isMobile ? "" : "Avenue Q"*/}2020 애비뉴큐
+              <img className="mr-2" src={require("assets/img/logowhite.png")} width="50px"></img>
+              {/*isMobile ? "" : "Avenue Q"*/}
+              <h6 style={{display:'inline-block'}}>2020 애비뉴큐</h6>
 
             </NavbarBrand>
             <button
@@ -94,12 +94,9 @@ function IndexNavbar() {
             <Nav navbar>
               <NavItem>
                 <NavLink
-                  href="#pablo"
+                  href="#"
                   onClick={e => {
                     e.preventDefault();
-                    document
-                      .getElementById("download-section")
-                      .scrollIntoView();
                   }}
                 >
                   <h6 style={menuTextStyle}>About</h6>
@@ -117,13 +114,12 @@ function IndexNavbar() {
                   <h6 style={menuTextStyle}>Teams</h6>
                 </DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem to="/index" tag={Link}>
+                  <DropdownItem to="/teamA" tag={Link}>
                     <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
                     Team A
                   </DropdownItem>
                   <DropdownItem
-                    href="/landing-page"
-                    target="_blank"
+                    to="/teamB" tag={Link}
                   >
                     <i className="now-ui-icons design_bullet-list-67 mr-1"></i>
                     Team B

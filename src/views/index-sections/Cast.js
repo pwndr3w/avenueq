@@ -8,14 +8,18 @@ import CastImg from "./CastImg"
 const dividerStyle = {
     marginTop:"-6vh"
 }
-function CastImgLayout({src}) {
+function CastImgLayout({ src }) {
+    const korean = src.split("/")[0];
+    const english = src.split("/")[1];
+
     return (
         <>
             <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                <CastImg src={src} />
+                <CastImg src={korean} />
                 <br></br>
                 <br></br>
-                <h3 className="description">{src}</h3>      
+                <h3 className="description font-weight-bold">{korean}</h3>      
+                <h6 className="description" style={{position:"relative", top:"-20px"}}>{english}</h6>      
             </Col>            
         </>
     );
@@ -59,8 +63,9 @@ function Cast() {
             <br></br>      
             <br></br>      
             <br></br>      
-            <br></br>      
-                  <CastDetail castName="Princeton" src={["황두현","양희승"]}/>
+                  <br></br>      
+                  {/* src안에 리스트에는 "이미지파일이름/영어이름"으로 입력 */}
+                  <CastDetail castName="Princeton" src={["황두현/Doohyun, Hwang","양희승/Heeseung, Yang"]}/>
                   <CastDetail castName="Kate Monster" src={["이신정","민다희", "홍세나"]}/>
                   <CastDetail castName="Brian" src={["김연천","양정모"]}/>
                   <CastDetail castName="Christmas Eve" src={["김보연","이유미", "임겨레"]}/>
