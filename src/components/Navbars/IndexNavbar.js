@@ -54,6 +54,10 @@ function IndexNavbar() {
   const menuIconStyle = {
     'verticalAlign': 'middle'
   }
+  const mobileMenuStyle = {
+    minWidth: 'max-content',
+    marginBottom: '6%'
+  }
   return (
     <>
       {collapseOpen ? (
@@ -141,8 +145,8 @@ function IndexNavbar() {
                     document
                       .getElementById("download-section")
                       .scrollIntoView();
-                  }}
-                  style={menuAStyle}
+                    }}
+                    style={menuAStyle}
                   >
                   <i className="fas fa-2x fa-question design_app mr-1" style={menuIconStyle}></i>
                   <h6 style={menuTextStyle}>Lovusical</h6>
@@ -157,7 +161,7 @@ function IndexNavbar() {
                     .getElementById("download-section")
                     .scrollIntoView();
                   }}
-                  style={menuAStyle}
+                  style={isMobile ? mobileMenuStyle : menuAStyle}
                 >
                   <i className="fas fa-2x fa-ticket-alt design_app mr-1" style={menuIconStyle}></i>
                   <h6 style={menuTextStyle}>Tickets</h6>

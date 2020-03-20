@@ -119,7 +119,7 @@ function CastingCalendar() {
         <>
     <div
         className="section"
-        style={{backgroundColor : "#df5d07"}}
+        style={{backgroundColor : "#df5d07", fontSize:"10px"}}
         id="calendar-section"
       >
         <Container>
