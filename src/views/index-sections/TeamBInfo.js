@@ -39,7 +39,6 @@ function TeamB() {
                 <Row className="justify-content-md-center">
                     <Col className="text-center" lg="6" md="6">
                         <h1 className="title">Team B</h1>
-                        <img width="300px" src={require('assets/img/divider.png')} style={Cast.dividerStyle}></img>
                     </Col>
                 </Row>
                 <div className="section section-team text-center">
@@ -278,22 +277,22 @@ function TeamB() {
                         <div className="team">
                             <Row className="justify-content-center">
                                 <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="김재혁" />
+                                    <CastImg src="윤한솔" />
                                     <br></br>
                                     <br></br>
                                     <Col className="text-center" lg="12" md="12">
                                         <h3 className="title">베드 베어즈 남B</h3>
-                                        <p className="category text-info">김재혁</p>
+                                        <p className="category text-info">윤한솔</p>
                                     </Col>
                                 </Col>
 
                                 <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="박은영" />
+                                    <CastImg src="이한솜" />
                                     <br></br>
                                     <br></br>
                                     <Col className="text-center" lg="12" md="12">
                                         <h3 className="title">베드 베어즈 여B</h3>
-                                        <p className="category text-info">박은영</p>
+                                        <p className="category text-info">이한솜</p>
                                     </Col>
                                 </Col>
                             </Row>

@@ -38,7 +38,6 @@ function TeamAInfo() {
                 <Row className="justify-content-md-center">
                     <Col className="text-center" lg="6" md="6">
                         <h1 className="title">Team A</h1>
-                        <img width="300px" src={require('assets/img/divider.png')} style={Cast.dividerStyle}></img>
                     </Col>
                 </Row>
                  <div className="section section-team text-center">
@@ -277,22 +276,22 @@ function TeamAInfo() {
                         <div className="team">
                             <Row className="justify-content-center">
                                 <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="윤한솔" />
+                                    <CastImg src="김재혁" />
                                     <br></br>
                                     <br></br>
                                     <Col className="text-center" lg="12" md="12">
                                         <h3 className="title">베드 베어즈 남A</h3>
-                                        <p className="category text-info">윤한솔</p>
+                                        <p className="category text-info">김재혁</p>
                                     </Col>
                                 </Col>
 
                                 <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="이한솜" />
+                                    <CastImg src="박은영" />
                                     <br></br>
                                     <br></br>
                                     <Col className="text-center" lg="12" md="12">
                                         <h3 className="title">베드 베어즈 여A</h3>
-                                        <p className="category text-info">이한솜</p>
+                                        <p className="category text-info">박은영</p>
                                     </Col>
                                 </Col>
                             </Row>
