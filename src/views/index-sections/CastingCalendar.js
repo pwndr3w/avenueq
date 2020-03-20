@@ -13,14 +13,14 @@ const CastingTable = (props) => {
           <th>날짜</th>
           <th>시간</th>
           <th>Princeton</th>
-          <th>Kate </th>
+          <th>Kate</th>
           <th>Brian</th>
           <th>Eve</th>
           <th>Rod</th>
-          <th>Nikky</th>
+          <th>Nicky</th>
           <th>Gary</th>
           <th>Lucy</th>
-          <th>Trekky</th>
+          <th>Trekkie</th>
           <th>Bears</th>
         </tr>
       </thead>

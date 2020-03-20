@@ -28,6 +28,7 @@ import CastingCalendar from "./index-sections/CastingCalendar.js";
 import CreativeTeam from "./index-sections/CreativeTeam.js";
 import About from "./index-sections/About.js";
 import Synopsis from "./index-sections/Synopsis.js";
+import Lovusical from "./index-sections/Lovusical.js";
 
 function Index() {
   React.useEffect(() => {
@@ -52,6 +53,7 @@ function Index() {
           <Cast />
           <CastingCalendar />
           <CreativeTeam />
+          <Lovusical />
         </div>
         <DarkFooter />
       </div>

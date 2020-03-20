@@ -22,6 +22,7 @@ import { isMobile } from "react-device-detect";
 
 function IndexNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
+  const [logoPath, setLogoPath] = React.useState("logowhite.png");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   React.useEffect(() => {
     const updateNavbarColor = () => {
@@ -30,11 +31,13 @@ function IndexNavbar() {
         document.body.scrollTop > 399
       ) {
         setNavbarColor("");
+        setLogoPath("logobigsize.png");
       } else if (
         document.documentElement.scrollTop < 400 ||
         document.body.scrollTop < 400
-      ) {
-        setNavbarColor("navbar-transparent");
+        ) {
+          setNavbarColor("navbar-transparent");
+          setLogoPath("logowhite.png");
       }
     };
     window.addEventListener("scroll", updateNavbarColor);
@@ -46,7 +49,7 @@ function IndexNavbar() {
     'display': 'inline-block'
   }
   const menuIconStyle = {
-    'vertical-align': 'middle'
+    'verticalAlign': 'middle'
   }
   return (
     <>
@@ -63,15 +66,15 @@ function IndexNavbar() {
         document.body.scrollTop < 400) ? navbarColor : "")} expand="lg" color="primary">
         <Container>
           <div className="navbar-translate">
-            <NavbarBrand
-              href="/"
-              id="navbar-brand"
-            >
-              <img className="mr-2" src={require("assets/img/logowhite.png")} width="50px"></img>
+          <Nav navbar>
+                <NavLink
+                  href="/"
+                >
+              <img className="mr-2" src={require("assets/img/"+logoPath)} width="50px"></img>
               {/*isMobile ? "" : "Avenue Q"*/}
-              <h6 style={{display:'inline-block'}}>2020 애비뉴큐</h6>
-
-            </NavbarBrand>
+              <h6 style={{display:'inline-block', fontSize: '15px', marginBottom: '0px', verticalAlign:'middle'}}>2020 애비뉴큐</h6>
+                </NavLink>
+            </Nav>
             <button
               className="navbar-toggler navbar-toggler"
               onClick={() => {

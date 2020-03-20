@@ -56,6 +56,7 @@ function CarouselSection() {
   return (
     <>
       <div className="page-header clear-filter" id="carousel" filter-color="white">
+        <Container>
           <Row className="justify-content-center">
             <Col lg="12" md="12">
               <Carousel
@@ -109,7 +110,7 @@ function CarouselSection() {
               </Carousel>
             </Col>
           </Row>
-        
+          </Container>
       </div>
     </>
   );

@@ -72,7 +72,7 @@ function Cast() {
                   <CastDetail castName="Rod" src={["김준범","박상호"]}/>
                   <CastDetail castName="Nicky" src={["이원종","황지상"]}/>
                   <CastDetail castName="Gary Coleman" src={["김설이","김지언"]}/>
-                  <CastDetail castName="Lucy" src={["안상현"]}/>
+                  <CastDetail castName="Lucy" src={["안상현/SangHyeon, An"]}/>
                   <CastDetail castName="Trekkie Monster" src={["김무준","유병선"]}/>
                   <CastDetail castName="Bad Idea Bears & Ensemble" src={["김재혁","박은영","김민성","조희령","윤한솔","이한솜","박국희","이기림"]}/>
                                     

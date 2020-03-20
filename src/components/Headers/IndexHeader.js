@@ -29,7 +29,6 @@ function IndexHeader() {
       };
     }
   });
-  if (isMobile) {
     return (
       <>
         <div className="page-header clear-filter" filter-color="green" style={{height:'100vh'}}>
@@ -42,37 +41,15 @@ function IndexHeader() {
           ></div>
           <Container>
             <div className="content-center brand">
-              <Button href="https://naver.com" className="btn-round" color="white" outline type="button" style={ticketStyle}>
-                Ticket Here!!
-              </Button>
-            </div>
-          </Container>
-        </div>
-      </>
-    );    
-  } else {
-    return (
-      <>
-        <div className="page-header clear-filter" filter-color="green" style={{height:'100vh'}}>
-          <div
-            className="page-header-image"
-            style={{
-              backgroundImage: "url(" + require("assets/img/desktopbg_new.jpeg") + ")"
-            }}
-            ref={pageHeader}
-          ></div>
-          <Container>
-            <div className="content-center brand">
-              <h1 className="h1-seo">Welcome to Avenue Q!</h1>
+              {isMobile ? "" : <h1 className="h1-seo">Welcome to Avenue Q!</h1>}
               <Button href="https://naver.com" className="btn-round" color="white" type="button" style={ticketStyle}>
-                Ticket Here!!
+                Ticket
               </Button>
             </div>
           </Container>
         </div>
       </>
     );    
-  }
 }
 
 export default IndexHeader;
