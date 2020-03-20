@@ -357,13 +357,13 @@ function TeamB() {
                                     <img
                                         alt="..."
                                         className="rounded img-raised"
-                                        src={require("assets/img/윤한솔.jpg")}
+                                        src={require("assets/img/김재혁.jpg")}
                                     ></img>
                                     <br></br>
                                     <br></br>
                                     <Col className="text-center" lg="12" md="12">
                                         <h3 className="title">앙상블</h3>
-                                        <p className="category text-info">윤한솔</p>
+                                        <p className="category text-info">김재혁</p>
                                     </Col>
                                 </Col>
 
@@ -371,7 +371,7 @@ function TeamB() {
                                     <img
                                         alt="..."
                                         className="rounded img-raised"
-                                        src={require("assets/img/김재혁.jpg")}
+                                        src={require("assets/img/박은영.jpg")}
                                     ></img>
                                     <br></br>
                                     <br></br>
