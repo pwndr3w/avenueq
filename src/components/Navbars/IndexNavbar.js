@@ -46,7 +46,10 @@ function IndexNavbar() {
     };
   });
   const menuTextStyle = {
-    'display': 'inline-block'
+    display: 'inline-block'
+  }
+  const menuAStyle = {
+    minWidth: 'max-content'
   }
   const menuIconStyle = {
     'verticalAlign': 'middle'
@@ -138,7 +141,8 @@ function IndexNavbar() {
                       .getElementById("download-section")
                       .scrollIntoView();
                   }}
-                >
+                  style={menuAStyle}
+                  >
                   <i className="fas fa-2x fa-question design_app mr-1" style={menuIconStyle}></i>
                   <h6 style={menuTextStyle}>Lovusical</h6>
                 </NavLink>
@@ -149,9 +153,10 @@ function IndexNavbar() {
                   onClick={e => {
                     e.preventDefault();
                     document
-                      .getElementById("download-section")
-                      .scrollIntoView();
+                    .getElementById("download-section")
+                    .scrollIntoView();
                   }}
+                  style={menuAStyle}
                 >
                   <i className="fas fa-2x fa-ticket-alt design_app mr-1" style={menuIconStyle}></i>
                   <h6 style={menuTextStyle}>Tickets</h6>
