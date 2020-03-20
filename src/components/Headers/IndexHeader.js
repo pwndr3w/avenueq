@@ -42,7 +42,7 @@ function IndexHeader() {
           <Container>
             <div className="content-center brand">
               {isMobile ? "" : <h1 className="h1-seo">Welcome to Avenue Q!</h1>}
-              <Button href="https://naver.com" className="btn-round" color="white" type="button" style={ticketStyle}>
+              <Button href="https://naver.com" target = "_blank" className="btn-round" color="white" type="button" style={ticketStyle}>
                 Ticket
               </Button>
             </div>
