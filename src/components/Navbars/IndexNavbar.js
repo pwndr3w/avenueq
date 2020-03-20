@@ -73,7 +73,8 @@ function IndexNavbar() {
                 <NavLink
                   href="/"
                 >
-              <img className="mr-2" src={require("assets/img/"+logoPath)} width="8%"></img>
+              <img className="mr-2" src={(!collapseOpen&&(document.documentElement.scrollTop < 400 ||
+        document.body.scrollTop < 400) ? require("assets/img/"+logoPath) : require("assets/img/logobigsize.png"))} width="8%"></img>
               {/*isMobile ? "" : "Avenue Q"*/}
               <h6 style={{display:'inline-block', fontSize: '15px', marginBottom: '0px', verticalAlign:'middle'}}>2020 애비뉴큐</h6>
                 </NavLink>
