@@ -25,6 +25,7 @@ import SignUp from "./index-sections/SignUp.js";
 import Examples from "./index-sections/Examples.js";
 import Cast from "./index-sections/Cast.js";
 import CastingCalendar from "./index-sections/CastingCalendar.js";
+import Notice from "./index-sections/Notice.js"; 
 import CreativeTeam from "./index-sections/CreativeTeam.js";
 import About from "./index-sections/About.js";
 import Synopsis from "./index-sections/Synopsis.js";
@@ -52,6 +53,7 @@ function Index() {
           <Synopsis />
           <Cast />
           <CastingCalendar />
+          <Notice/>
           <CreativeTeam />
           <Lovusical />
         </div>
