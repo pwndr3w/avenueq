@@ -28,8 +28,8 @@ function Notice() {
                             <h4 align="left">관람 연령&nbsp; :&nbsp; 15세 이상</h4>
                             <h4 align="left">공연 시간&nbsp; :&nbsp; 150분(1막 80분 / 2막 + 커튼콜 60분 / 인터미션 10분 포함 / 6공)</h4>
                             <h4 align="left">공연 일정</h4>
-                            <h5 align="left">&nbsp; 1)&nbsp; 3/7(토) - (A팀)12:00-(B팀)15:30-(AC팀)19:00</h5>
-                            <h5 align="left">&nbsp; 2)&nbsp; 3/8(일) - (B팀)11:30-(A팀)15:00-(BC팀)18:30</h5>
+                            <h5 align="left">&nbsp; 1)&nbsp; 4/25(토) - (A팀)12:00-(B팀)15:30-(AC팀)19:00</h5>
+                            <h5 align="left">&nbsp; 2)&nbsp; 4/26(일) - (B팀)11:30-(A팀)15:00-(BC팀)18:30</h5>
                             <h4 align="left">주의 사항</h4>
                             <h5 align="left">&nbsp; 1) &nbsp; 예매시 지정한 좌석에 착석해 주세요 </h5>
                             <h5 align="left">&nbsp; 2) &nbsp; 공연 15분 전까지 입장가능(공연 시작 후 입장 불가 -> 인터미션 입장)</h5>
