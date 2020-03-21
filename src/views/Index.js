@@ -49,7 +49,7 @@ function Index() {
       <div className="wrapper">
         <IndexHeader />
         <div className="main">
-          <About />
+          <About style={{ fontFamily: 'Noto Sans KR, sans-family' }}/>
           <Synopsis />
           <Cast />
           <CastingCalendar />
