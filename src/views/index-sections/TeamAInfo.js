@@ -1,14 +1,6 @@
 import React from "react";
-import Cast from "./Cast";
-import CastImg from "./CastImg";
-
 // reactstrap components
 import {
-    Button,
-    Input,
-    InputGroupAddon,
-    InputGroupText,
-    InputGroup,
     Container,
     Row,
     Col
@@ -17,6 +9,112 @@ import {
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";          // 맨 윗줄 메뉴바
 import LandingPageHeader from "components/Headers/TeamAInfoHeader.js";
+import CastImg from "./CastImg";
+
+function CastImgLayout({ src }) {
+    const korean = src.split("/")[0];
+    const charname = src.split("/")[1];
+
+    return (
+        <>
+            <Col className="text-center" lg="4" md="6" sm="6" xs="6">
+                <CastImg src={korean} />
+                <br></br>
+                <br></br>  
+                <h3 className="description font-weight-bold">{charname}</h3>
+                <p className="category text-info" style={{ position: "relative", top: "-20px" }}>{korean}</p>
+            </Col>
+        </>
+    );
+}
+
+function EnsenbleImgLayout({ src }) {
+    const korean = src.split("/")[0];
+    const charname = src.split("/")[1];
+
+    return (
+        <>
+            <Col className="text-center">
+                <CastImg src={korean} />
+                <br></br>
+                <br></br>
+                <h3 className="description font-weight-bold">{charname}</h3>
+                <p className="category text-info" style={{ position: "relative", top: "-20px" }}>{korean}</p>
+            </Col>
+        </>
+    );
+}
+
+function CoupleImgLayout({ src }) {
+    const korean = src.split("/")[0];
+    const charname = src.split("/")[1];
+
+    return (
+        <>
+            <Col className="text-center">
+                <CastImg src={korean} />
+                <br></br>
+                <br></br>
+                <h3 className="description font-weight-bold">{charname}</h3>
+                <p className="category text-info" style={{ position: "relative", top: "-20px" }}>{korean}</p>
+            </Col>
+        </>
+    );
+}
+
+
+function CastDetail(props) {
+    if (props.actorType == '1') {  // 배역
+        return (
+            <>
+                <Row className="justify-content-center">
+                    <Col className="text-center" lg="12" md="12">
+                        <h2 className="title">{props.castName}</h2>
+                    </Col>
+                </Row>
+                <br></br>
+                <br></br>
+                <Row className="justify-content-center">
+                    {props.src.map(src => (
+                        <CastImgLayout src={src} />
+                    ))}
+                </Row>
+            </>
+        );
+    }
+    else if (props.actorType == '2') { //베베
+        return (
+            <>
+                <Row className="justify-content-center">
+                    <Col className="text-center">
+                        <h2 className="title">{props.castName}</h2>
+                    </Col>
+                </Row>
+                <Row className="justify-content-center">
+                    {props.src.map(src => (
+                        <EnsenbleImgLayout src={src} />
+                    ))}
+                </Row>
+            </>
+        );
+    }
+    else if (props.actorType == '3') { //커플
+        return (
+            <>
+                <Row className="justify-content-center">
+                    <Col className="text-center">
+                        <h2 className="title">{props.castName}</h2>
+                    </Col>
+                </Row>
+                <Row className="justify-content-center">
+                    {props.src.map(src => (
+                        <CoupleImgLayout src={src} />
+                    ))}
+                </Row>
+            </>
+        );
+    }
+}
 
 function TeamAInfo() {
     const [firstFocus, setFirstFocus] = React.useState(false);
@@ -42,373 +140,25 @@ function TeamAInfo() {
                     </Col>
                 </Row>
                  <div className="section section-team text-center">
-                    <Container>                        
-                        <h2 className="title">프린스턴 & 케이트</h2>
-                        <div className="team">
-                            <Row className="justify-content-center">
-                                <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="이신정" />
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">케이트 A</h3>
-                                        <p className="category text-info">이신정</p>
-                                    </Col>
-                                </Col>            
-                                <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="황두현" />
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">프린스턴</h3>
-                                        <p className="category text-info">황두현</p>
-                                    </Col>
-                                </Col>     
-                                <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="홍세나" />
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">케이트 C</h3>
-                                        <p className="category text-info">홍세나</p>
-                                    </Col>
-                                </Col>     
-                            </Row>
-                        </div>
-                    </Container>
-
                     <Container>
                         <div className="team">
-                            <Row className="justify-content-center">
-                                <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="이신정" />
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">프린스턴 & 케이트 A</h3>                                       
-                                    </Col>
-                                </Col> 
-                                <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="홍세나" />
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">프린스턴 & 케이트 B C</h3>
-                                    </Col>
-                                </Col>
-                            </Row>
-                        </div>
-                    </Container>
+                            <CastDetail castName="프린스턴 & 케이트" actorType="1" src={["이신정/케이트", "황두현/프린스턴", "홍세나/케이트"]} />
+                            <CastDetail actorType="3" src={["프케a/임시라 나중에 이름 및 사진 변경", "프케ac/임시라 나중에 이름 및 사진 변경"]} />
+                            
+                            <CastDetail castName="이브 & 브라이언" actorType="1" src={["김보연/이 브", "김연천/브라이언", "임겨레/이 브"]} /> 
+                            <CastDetail actorType="3" src={["프케a/임시라 나중에 이름 및 사진 변경", "프케ac/임시라 나중에 이름 및 사진 변경"]} />
 
-                    <Container>
-                        <h2 className="title">이브 & 브라이언</h2>
-                        <div className="team">
-                            <Row className="justify-content-center">
-                                <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="김보연" />
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">이 브 A</h3>
-                                        <p className="category text-info">김보연</p>
-                                    </Col>
-                                </Col>
-                                <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="김연천" />
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">브라이언</h3>
-                                        <p className="category text-info">김연천</p>
-                                    </Col>
-                                </Col>
-                                <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="임겨레" />
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">이 브 C</h3>
-                                        <p className="category text-info">임겨레</p>
-                                    </Col>
-                                </Col>
-                            </Row>
-                        </div>
-                    </Container>
+                            <CastDetail castName="니키 & 로드" actorType="1" src={["이원종/니 키", "김준범/로 드"]} />  
+                            <CastDetail actorType="3" src={["프케a/임시라 나중에 이름 및 사진 변경", "프케ac/임시라 나중에 이름 및 사진 변경"]} />
 
-                    <Container>
-                        <div className="team">
-                            <Row className="justify-content-center">
-                                <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="김보연" />
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">이 브A & 브라이언</h3>
-                                    </Col>
-                                </Col>
-                                <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="임겨레" />
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">이 브C & 브라이언</h3>
-                                    </Col>
-                                </Col>
-                            </Row>
-                        </div>
-                    </Container>
+                            <CastDetail castName="루시 & 개리 & 트래키" actorType="1" src={["안상현/루 시", "김설이/개 리", "김무준/트래키"]} />    
+                            <CastDetail actorType="3" src={["프케a/임시라 나중에 이름 및 사진 변경", "프케ac/임시라 나중에 이름 및 사진 변경", "프케ac/임시라 나중에 이름 및 사진 변경"]} />
 
-                    <Container>
-                        <h2 className="title">니키 & 로드</h2>
-                        <div className="team">
-                            <Row className="justify-content-center">
-                                <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="이원종" />
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">니 키</h3>
-                                        <p className="category text-info">이원종</p>
-                                    </Col>
-                                </Col>
+                            <CastDetail castName="베드 베어즈" actorType = "1" src={["김재혁/베드 베어즈 남", "박은영/베드 베어즈 여"]} />    
+                            <CastDetail castName="베드 베어즈" actorType="1" src={["김민성/베드 베어즈 남", "조희령/베드 베어즈 여"]} />
+                            <CastDetail actorType="3" src={["프케a/임시라 나중에 이름 및 사진 변경", "프케ac/임시라 나중에 이름 및 사진 변경"]} />
 
-                                <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="김준범" />
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">로 드</h3>
-                                        <p className="category text-info">김준범</p>
-                                    </Col>
-                                </Col>
-                            </Row>
-                        </div>
-                    </Container>
-
-                    <Container>
-                        <div className="team">
-                            <Row className="justify-content-center">
-                                <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="이원종" />
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">니 키 & 로 드</h3>
-                                    </Col>
-                                </Col>
-                                <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="김준범" />
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">니 키 & 로 드</h3>
-                                    </Col>
-                                </Col>
-                            </Row>
-                        </div>
-                    </Container>
-
-                    <Container>
-                        <h2 className="title">루시 & 개리 & 트래키</h2>
-                        <div className="team">
-                            <Row className="justify-content-center">
-                                <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="안상현" />
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">루 시</h3>
-                                        <p className="category text-info">안상현</p>
-                                    </Col>
-                                </Col>
-                                <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="김설이" />
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">개 리</h3>
-                                        <p className="category text-info">김설이</p>
-                                    </Col>
-                                </Col>
-                                <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="김무준" />
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">트래키</h3>
-                                        <p className="category text-info">김무준</p>
-                                    </Col>
-                                </Col>
-                            </Row>
-                        </div>
-                    </Container>
-
-                    <Container>
-                            <Row className="justify-content-center">
-                                <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="안상현" />
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">루 시</h3>
-                                    </Col>
-                                </Col>
-                                <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="김설이" />
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">개 리</h3>
-                                    </Col>
-                                </Col>
-                                <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="김무준" />
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">트래키</h3>
-                                    </Col>
-                                </Col>
-                            </Row>
-                    </Container>
-
-                    <Container>
-                        <h2 className="title">베드 베어즈</h2>
-                        <div className="team">
-                            <Row className="justify-content-center">
-                                <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="김재혁" />
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">베드 베어즈 남A</h3>
-                                        <p className="category text-info">김재혁</p>
-                                    </Col>
-                                </Col>
-
-                                <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="박은영" />
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">베드 베어즈 여A</h3>
-                                        <p className="category text-info">박은영</p>
-                                    </Col>
-                                </Col>
-                            </Row>
-                        </div>
-                    </Container>
-
-                    <Container>
-                        <div className="team">
-                            <Row className="justify-content-center">
-                                <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="김민성" />
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">베드 베어즈 남AC</h3>
-                                        <p className="category text-info">김민성</p>
-                                    </Col>
-                                </Col>
-
-                                <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="조희령" />
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">베드 베어즈 여AC</h3>
-                                        <p className="category text-info">조희령</p>
-                                    </Col>
-                                </Col>
-                            </Row>
-                        </div>
-                    </Container>
-
-                    <Container>
-                        <div className="team">
-                            <Row className="justify-content-center">
-                                <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="윤한솔" />
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">베베 커플사진</h3>
-                                    </Col>
-                                </Col>
-
-                                <Col className="text-center" lg="4" md="6" sm="6" xs="6">
-                                    <CastImg src="김민성" />
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">베베 커플사진</h3>
-                                    </Col>
-                                </Col>
-                            </Row>
-                        </div>
-                    </Container>
-
-                    <Container>
-                        <h2 className="title">앙상블</h2>
-                        <div className="team">
-                            <Row className="justify-content-center">
-                                <Col className="text-center">
-                                    <img
-                                        alt="..."
-                                        className="rounded img-raised" 
-                                        src={require("assets/img/윤한솔.jpg")}
-                                    ></img>
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">앙상블</h3>
-                                        <p className="category text-info">윤한솔</p>
-                                    </Col>
-                                </Col>
-
-                                <Col className="text-center">
-                                    <img
-                                        alt="..."
-                                        className="rounded img-raised"
-                                        src={require("assets/img/이한솜.jpg")}
-                                    ></img>
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">앙상블</h3>
-                                        <p className="category text-info">이한솜</p>
-                                    </Col>
-                                </Col>
-
-                                <Col className="text-center">
-                                    <img
-                                        alt="..."
-                                        className="rounded img-raised"
-                                        src={require("assets/img/박국희.jpg")}
-                                    ></img>
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">앙상블</h3>
-                                        <p className="category text-info">박국희</p>
-                                    </Col>
-                                </Col>
-
-                                <Col className="text-center">
-                                    <img
-                                        alt="..."
-                                        className="rounded img-raised"
-                                        src={require("assets/img/이기림.jpg")}
-                                    ></img>
-                                    <br></br>
-                                    <br></br>
-                                    <Col className="text-center" lg="12" md="12">
-                                        <h3 className="title">앙상블</h3>
-                                        <p className="category text-info">이기림</p>
-                                    </Col>
-                                </Col>
-                            </Row>
+                            <CastDetail castName="앙상블" actorType="2" src={["윤한솔/앙상블", "이한솜/앙상블", "박국희/앙상블", "이기림/앙상블"]} />    
                         </div>
                     </Container>
                 </div>
