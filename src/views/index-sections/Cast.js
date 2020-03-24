@@ -55,13 +55,11 @@ function Cast() {
       >
         <Container>
             <Row className="justify-content-md-center">
-                <Col className="text-center" lg="12" md="12">
-                          <h1 className="title">Cast</h1>
+                      <Col className="text-center" lg="12" md="12">
+                          <img src={require('assets/img/cast_title.png')} ></img>
                           {/* <img width="300px" src={require('assets/img/divider.png')} style={dividerStyle}></img> */}
                 </Col>
-            </Row>
-            <br></br>      
-            <br></br>      
+            </Row>      
             <br></br>      
                   <br></br>      
                   {/* src안에 리스트에는 "이미지파일이름/영어이름"으로 입력 */}

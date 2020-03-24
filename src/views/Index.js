@@ -30,7 +30,7 @@ import CreativeTeam from "./index-sections/CreativeTeam.js";
 import About from "./index-sections/About.js";
 import Synopsis from "./index-sections/Synopsis.js";
 import Lovusical from "./index-sections/Lovusical.js";
-
+import AddMedia from "./index-sections/Addmedia.js";
 function Index() {
   React.useEffect(() => {
     document.body.classList.add("index-page");
@@ -50,6 +50,7 @@ function Index() {
         <IndexHeader />
         <div className="main">
           <About style={{ fontFamily: 'Noto Sans KR, sans-family' }}/>
+          <AddMedia />
           <Synopsis />
           <Cast />
           <CastingCalendar />

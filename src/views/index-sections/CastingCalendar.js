@@ -124,8 +124,8 @@ function CastingCalendar() {
       >
         <Container>
             <Row className="justify-content-md-center">
-                <Col className="text-center" lg="12" md="12">
-                            <h1 className="title" style={{color:"white"}}>Casting Calendar</h1>
+                        <Col className="text-center" lg="12" md="12">
+                            <img src={require('assets/img/calendar_title.png')} ></img>
                           
                 </Col>
                     </Row>    

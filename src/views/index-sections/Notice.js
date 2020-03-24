@@ -19,7 +19,10 @@ function Notice() {
                     
                     <Row className="justify-content-md-center">
                         <Col className="text-center" lg="12" md="12">
-                            <h1 className="title">Musical Information</h1>
+                            <img src={require('assets/img/info_title.png')} ></img>
+                            <br></br>
+                            <br></br>
+                            <br></br>
                             <p><iframe width="100%" height="450" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJOfeCXl2efDURMdSGWL0KeVA&key=AIzaSyBUxmgTnthFyGHPFv7pkD4wEw11F4kzdNo"></iframe></p>
                             <h4 align="left">극 장&nbsp; :&nbsp; 구로 예술나무씨어터</h4>
                             <h4 align="left">주 최&nbsp; :&nbsp; 러뷰지컬</h4>
