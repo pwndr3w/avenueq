@@ -18,12 +18,15 @@ function About() {
                   backgroundRepeat: 'no-repeat',
                   backgroundPosition: 'center',
               }}>
-              <Container className="text-center">
+              <Container className="text-center" style={{
+                  maxWidth: '576px',
+                  minWidth: '576px'
+              }}>
                   <img src={require('assets/img/3txt_title.png')} ></img>
                   <Row className="justify-content-md-center" > 
                       <Col style={{
-                          maxWidth: '991px',
-                          minWidth: '480px',
+                          maxWidth: '700px',
+                          minWidth: '560px',
                           backgroundImage: "url(" + require("assets/img/3txt_box1.png") + ")",
                           backgroundRepeat: 'no-repeat',
                           backgroundPosition: 'center',
@@ -53,8 +56,6 @@ function About() {
                      </h5>
                       </Col>
                </Row>
-
-
           <Row className="justify-content-md-center mt-5">
             <Col lg="6" md="6" sm="12" className="mb-5">
               <i className="fas fa-4x fa-theater-masks "></i>
