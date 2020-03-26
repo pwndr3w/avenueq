@@ -4,23 +4,48 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 
 // core components
-
+/*xl="auto" xs="auto" sm="auto" lg="auto" md="auto"
+ * .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto
+ */
 function About() {
   return (
-    <>
-      <div className="section">
-        <Container className="text-center">
-          <Row className="justify-content-md-center">
-            <Col lg="8" md="12">
-              <h2 className="title">Avenue Q</h2>
-              <h5 className="description">
-                2020 러비스 프로젝트 애비뉴 큐! <br></br>
-                인형극이라는 형식으로 브로드웨이에서 큰 반향을 일으키며 토니상 3관왕을 수상한 우수한 작품이다. 국내에서는 아직 한국어로 공연된 적이 없는 '애비뉴 큐!'
-                2020년의 한국 버전으로 직접 번안, 각색한 러뷰지컬의 2020 러비스 프로젝트 《애비뉴 큐!》를 통해 취업도 연애도 어렵고, 정체성을 고민하며,
-                삶의 목적을 찾아 방황하는2030들의 코끝 찡한 현실을 마주해보자!
-              </h5>
-            </Col>
-          </Row>
+      <>
+          <div className="section"
+              data-background-color="#f3ead9"
+              id="download-section"
+              style={{
+                  backgroundColor: '#f3ead9',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundPosition: 'center',
+              }}>
+              <Container className="text-center">
+                  <img src={require('assets/img/3txt_title.png')} ></img>
+                  <Row className="justify-content-md-center" > 
+                      <Col lg="10" md="10" style={{
+                          backgroundImage: "url(" + require("assets/img/3txt_box1.png") + ")",
+                          backgroundRepeat: 'no-repeat',
+                          backgroundPosition: 'center',
+                          position: 'relative',
+                          margin: '0px',
+                          padding: '180px',
+                      }} >
+                          <Col lg="10" md="10" style={{ position: 'absolute' }}>
+                              <h3  className="title" style={{
+                                  color: 'Black'
+                                  , marginBottom: '4px',}}>Avenue Q</h3>
+                              <h5 className="description" style={{
+                                  color: 'Black',
+                                  fontSize: '1.2em'}}>
+                                  2020 러비스 프로젝트 애비뉴 큐! <br></br>
+                                  인형극이라는 형식으로 브로드웨이에서 큰 반향을 일으키며 토니상 3관왕을 수상한 우수한 작품이다. 국내에서는 아직 한국어로 공연된 적이 없는 '애비뉴 큐!'
+                              2020년의 한국 버전으로 직접 번안, 각색한 러뷰지컬의 2020 러비스 프로젝트 《애비뉴 큐!》를 통해 취업도 연애도 어렵고, 정체성을 고민하며,
+                              삶의 목적을 찾아 방황하는2030들의 코끝 찡한 현실을 마주해보자!
+                     </h5>
+                          </Col>
+                      </Col>         
+               </Row>
+
+
           <Row className="justify-content-md-center mt-5">
             <Col lg="6" md="6" sm="12" className="mb-5">
               <i className="fas fa-4x fa-theater-masks "></i>
