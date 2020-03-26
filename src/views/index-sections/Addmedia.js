@@ -1,17 +1,18 @@
 import React from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 
-const addCharStyle = {
-  
- }
-
 function AddMedia() {
     return (
         <>
             <div
-                className="section"
+                className="section section-download"
                 data-background-color="black"
                 id="download-section"
+                style={{
+                    backgroundColor: 'yellow',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center center',
+                }}
             >
                 <Container>
                     <Row className="justify-content-md-center">
@@ -20,12 +21,17 @@ function AddMedia() {
                             <br></br>
                             <br></br>
                             <br></br>
-                            <span style={addCharStyle}>
-                                <img src={require('assets/img/video_brian.png')} ></img>
+                            <span>
+                                <img style={{
+                                    margin: '5px',
+                                }} src={require('assets/img/video_brian.png')} ></img>
                             </span>
                             <div>
-                                <iframe align ="left" width="50%" height="450" frameborder="0" src="https://www.youtube.com/embed/dSfX-MZjGdw?list=PLNU2fRUhH0U-y5CRSfis0ayPFxOLafwiO" frameborder="0"></iframe>
-                            </div>
+                                <iframe align ="left" width="100%" height="720" frameborder="0" src="https://www.youtube.com/embed/dSfX-MZjGdw?list=PLNU2fRUhH0U-y5CRSfis0ayPFxOLafwiO" frameborder="0"></iframe>
+                                <img style={{
+                                    margin: '50px',
+                                }} src={require('assets/img/video_title.png')} ></img>
+                                </div>                           
                         </Col>
                     </Row>
                 </Container>
