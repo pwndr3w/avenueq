@@ -21,7 +21,9 @@ function About() {
               <Container className="text-center">
                   <img src={require('assets/img/3txt_title.png')} ></img>
                   <Row className="justify-content-md-center" > 
-                      <Col lg="10" md="10" style={{
+                      <Col style={{
+                          maxWidth: '991px',
+                          minWidth: '480px',
                           backgroundImage: "url(" + require("assets/img/3txt_box1.png") + ")",
                           backgroundRepeat: 'no-repeat',
                           backgroundPosition: 'center',
@@ -29,20 +31,27 @@ function About() {
                           margin: '0px',
                           padding: '180px',
                       }} >
-                          <Col lg="10" md="10" style={{ position: 'absolute' }}>
-                              <h3  className="title" style={{
-                                  color: 'Black'
-                                  , marginBottom: '4px',}}>Avenue Q</h3>
-                              <h5 className="description" style={{
-                                  color: 'Black',
-                                  fontSize: '1.2em'}}>
-                                  2020 러비스 프로젝트 애비뉴 큐! <br></br>
-                                  인형극이라는 형식으로 브로드웨이에서 큰 반향을 일으키며 토니상 3관왕을 수상한 우수한 작품이다. 국내에서는 아직 한국어로 공연된 적이 없는 '애비뉴 큐!'
-                              2020년의 한국 버전으로 직접 번안, 각색한 러뷰지컬의 2020 러비스 프로젝트 《애비뉴 큐!》를 통해 취업도 연애도 어렵고, 정체성을 고민하며,
-                              삶의 목적을 찾아 방황하는2030들의 코끝 찡한 현실을 마주해보자!
+                      </Col>                               
+                      <Col style={{
+                          maxWidth: '560px',
+                          minWidth: '560px',
+                          position: 'absolute',
+                          margin: '109px 0px',
+                      }}>
+                          <h3 className="title" style={{
+                              color: 'Black'
+                              , marginBottom: '4px',
+                          }}>Avenue Q</h3>
+                          <h5 className="description" style={{
+                              color: 'Black',
+                              fontSize: '1.2em'
+                          }}>
+                              2020 러비스 프로젝트 애비뉴 큐! <br></br>
+                              인형극이라는 형식으로 브로드웨이에서 큰 반향을 일으키며 토니상 3관왕을 수상한 우수한 작품이다. 국내에서는 아직 한국어로 공연된 적이 없는 '애비뉴 큐!'
+                          2020년의 한국 버전으로 직접 번안, 각색한 러뷰지컬의 2020 러비스 프로젝트 《애비뉴 큐!》를 통해 취업도 연애도 어렵고, 정체성을 고민하며,
+                          삶의 목적을 찾아 방황하는2030들의 코끝 찡한 현실을 마주해보자!
                      </h5>
-                          </Col>
-                      </Col>         
+                      </Col>
                </Row>
 
 
