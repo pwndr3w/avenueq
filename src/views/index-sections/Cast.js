@@ -64,7 +64,7 @@ function Cast() {
                   <br></br>      
                   {/* src안에 리스트에는 "이미지파일이름/영어이름"으로 입력 */}
                   <CastDetail castName="Princeton" src={["황두현/Doohyun, Hwang","양희승/Heeseung, Yang"]}/>
-                  <CastDetail castName="Kate Monster" src={["이신정","민다희", "홍세나"]}/>
+                  <CastDetail castName="Kate Monster" src={["이신정/Shinjung, Lee","민다희/Dahee, Min", "홍세나/Serena, Hong"]}/>
                   <CastDetail castName="Brian" src={["김연천","양정모"]}/>
                   <CastDetail castName="Christmas Eve" src={["김보연","이유미", "임겨레"]}/>
                   <CastDetail castName="Rod" src={["김준범","박상호"]}/>

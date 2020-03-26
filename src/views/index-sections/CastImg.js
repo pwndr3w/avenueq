@@ -7,7 +7,7 @@ const imgStyle = {
 function CastImg(props) {
     return (
      <>
-            <img className="rounded img-raised" src={require('assets/img/' + props.src + ".jpg")} width="80%" style={imgStyle}>
+            <img className="rounded" src={require('assets/img/' + props.src + ".jpg")} width="80%" style={imgStyle}>
             </img>
     </>
     );
