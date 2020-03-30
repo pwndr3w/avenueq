@@ -43,13 +43,13 @@ function TeamB() {
                 <div className="section section-team text-center">
                     <Container>
                         <div className="team">
-                            <TeamInfoDetail castName="프린스턴 & 케이트" actorType="1" src={["민다희/케이트", "양희승/프린스턴", "홍세나/케이트"]} />
-                            <TeamInfoDetail castName="이브 & 브라이언" actorType="1" src={["이유미/이 브", "양정모/브라이언", "임겨레/이 브"]} />
-                            <TeamInfoDetail castName="니키 & 로드" actorType="1" src={["황지상/니 키", "박상호/로 드"]} />
-                            <TeamInfoDetail castName="루시 & 개리 & 트래키" actorType="1" src={["안상현/루 시", "김지언/개 리", "유병선/트래키"]} />
-                            <TeamInfoDetail castName="베드 베어즈" actorType="1" src={["윤한솔/베드 베어즈 남", "이한솜/베드 베어즈 여"]} />
-                            <TeamInfoDetail castName="베드 베어즈" actorType="1" src={["박국희/베드 베어즈 남", "이기림/베드 베어즈 여"]} />
-                            <TeamInfoDetail castName="앙상블" actorType="2" src={["김재혁/앙상블", "박은영/앙상블", "김민성/앙상블", "조희령/앙상블"]} />
+                            <TeamInfoDetail castName="프린스턴 & 케이트" actorType="1" src={["민다희/케이트/Dahee Min", "양희승/프린스턴/Huiseung Yang", "홍세나/케이트/Serena Hong"]} />
+                            <TeamInfoDetail castName="이브 & 브라이언" actorType="1" src={["이유미/이 브/Yumi Lee", "양정모/브라이언/Leo Yang", "임겨레/이 브/Kyeorei Lim"]} />
+                            <TeamInfoDetail castName="니키 & 로드" actorType="1" src={["황지상/니 키/Jisang Hwang", "박상호/로 드/Sangho Park"]} />
+                            <TeamInfoDetail castName="루시 & 개리 & 트래키" actorType="1" src={["안상현/루 시/Sanghyeon An", "김지언/개 리/Jieon Kim", "유병선/트래키/Byungsun Yu"]} />
+                            <TeamInfoDetail castName="베드 베어즈" actorType="1" src={["윤한솔/베드 베어즈 남/Hansol Yun", "이한솜/베드 베어즈 여/Hansom Lee"]} />
+                            <TeamInfoDetail castName="베드 베어즈" actorType="1" src={["박국희/베드 베어즈 남/Kukhee Park", "이기림/베드 베어즈 여/KiRim Lee"]} />
+                            <TeamInfoDetail castName="앙상블" actorType="2" src={["김재혁/앙상블/Jaehyeok Kim", "박은영/앙상블/Eunyoung Park", "김민성/앙상블/Minsung Kim", "조희령/앙상블"]} />
                         </div>
                     </Container>
                 </div>

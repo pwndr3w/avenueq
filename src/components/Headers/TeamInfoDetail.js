@@ -17,7 +17,7 @@ import CastImg from "views/index-sections/CastImg.js";
 function CastImgLayout({ src }) {
     const korean = src.split("/")[0];
     const charname = src.split("/")[1];
-
+    const englishName = src.split("/")[2];
     return (
         <>
             <Col className="text-center" lg="4" md="6" sm="6" xs="6">
@@ -25,7 +25,7 @@ function CastImgLayout({ src }) {
                 <br></br>
                 <br></br>
                 <h3 className="description font-weight-bold">{charname}</h3>
-                <p className="category text-info" style={{ position: "relative", top: "-20px" }}>{korean}</p>
+                <p className="description" style={{ position: "relative", top: "-20px" }}>{englishName}</p>
             </Col>
         </>
     );
@@ -34,7 +34,7 @@ function CastImgLayout({ src }) {
 function EnsenbleImgLayout({ src }) {
     const korean = src.split("/")[0];
     const charname = src.split("/")[1];
-
+    const englishName = src.split("/")[2];
     return (
         <>
             <Col className="text-center">
@@ -42,7 +42,7 @@ function EnsenbleImgLayout({ src }) {
                 <br></br>
                 <br></br>
                 <h3 className="description font-weight-bold">{charname}</h3>
-                <p className="category text-info" style={{ position: "relative", top: "-20px" }}>{korean}</p>
+                <p className="description" style={{ position: "relative", top: "-20px" }}>{englishName}</p>
             </Col>
         </>
     );
@@ -59,7 +59,7 @@ function CoupleImgLayout({ src }) {
                 <br></br>
                 <br></br>
                 <h3 className="description font-weight-bold">{charname}</h3>
-                <p className="category text-info" style={{ position: "relative", top: "-20px" }}>{korean}</p>
+                <p className="description" style={{ position: "relative", top: "-20px" }}>{korean}</p>
             </Col>
         </>
     );
