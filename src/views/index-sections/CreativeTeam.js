@@ -24,6 +24,7 @@ function CreativeTeam() {
                       src={require("assets/img/곽하늬.jpg")}
                     ></img>
                     <h4 className="title">곽하늬</h4>
+                    <h6 className="description">Hani Gwak</h6>
                     <p className="category text-info">연출</p>
                   </div>
                 </Col>
@@ -35,6 +36,7 @@ function CreativeTeam() {
                       src={require("assets/img/선세리.jpg")}
                     ></img>
                     <h4 className="title">선세리</h4>
+                    <h6 className="description">Seri Sun</h6>
                     <p className="category text-info">연출</p>
                   </div>
                 </Col>
