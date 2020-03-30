@@ -1,5 +1,9 @@
 @media screen and (max-width: 991px){
     @include mobileTypo();
+    .navbar img{
+        top:55%;
+        left:40%;
+    }
     .sidebar-collapse{
         @include navbar-collapse();
 
@@ -107,6 +111,12 @@
             max-width: 135px;
             top: 93%;
         }
+    }
+    .aboutTitle{
+        font-size: 1.8em;
+    }
+    .aboutDescription{
+        font-size: 0.8em;
     }
 }
 
@@ -276,6 +286,12 @@
         margin-left: 0;
         margin-bottom: 30px;
     }
+    .aboutTitle{
+        font-size: 3em;
+    }
+    .aboutDescription{
+        font-size: 2.3em;
+    }
 }
 
 @media screen and (max-width: 576px){
@@ -309,7 +325,7 @@
     }
 }
 
-@media screen and (min-width: 991px) and (max-width: 1200px){
+@media screen and (min-width: 992px) and (max-width: 1200px){
     .section-images{
         .hero-images-container-1{
             right: 9%;
@@ -320,6 +336,12 @@
             right: 2%;
             max-width: 216px;
         }
+    }
+    .aboutTitle{
+        font-size: 2.5em;
+    }
+    .aboutDescription{
+        font-size: 1em;
     }
 }
 
@@ -364,6 +386,21 @@
             right: 14%;
         }
     }
+    .aboutTitle{
+        font-size: 2em;
+    }
+    .aboutDescription{
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 1600px){
+    .aboutTitle{
+        font-size: 1.7em;
+    }
+    .aboutDescription{
+        font-size: 0.8em;
+    }
 }
 
 // Ipad responsive portrait mode
@@ -395,6 +432,9 @@ and ( orientation : portrait){
     .index-page .category-absolute{
         top: 90vh;
     }
+    .aboutDescription{
+        font-size: 1.5em;
+    }
 }
 
 @media screen and (max-width: 580px) {
@@ -412,4 +452,10 @@ and ( orientation : portrait){
   .index-page .page-header .category-absolute{
     margin-top: -330px;
   }
+}
+
+@media screen and (max-width:768px) and (min-width:620px){
+    .aboutDescription{
+        font-size: 1.8em;
+    }
 }

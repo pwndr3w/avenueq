@@ -38,6 +38,28 @@
         font-size: inherit;
     }
 
+    #logo{
+        position: absolute;
+        left: 0;
+        top: -40%;
+        width: -webkit-fill-available;
+    }
+
+    img{
+        position:absolute;
+        left:42%;
+        top:86%;
+        transform: translate(-50%, -50%);
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;        
+    }
+
+    img.transImg{
+        opacity: 0;
+    }
+
     .navbar-nav{
         &.navbar-logo{
             position: absolute;
@@ -161,8 +183,10 @@
         color: $white-color;
         padding-top: 20px !important;
     }
-
+    
     &.bg-white:not(.navbar-transparent){
+        
+
         a:not(.dropdown-item):not(.btn){
             color: $default-color;
 

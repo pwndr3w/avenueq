@@ -22,6 +22,7 @@ import { isMobile } from "react-device-detect";
 
 function IndexNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
+  const [trans, setTrans] = React.useState("");
   const [logoPath, setLogoPath] = React.useState("logowhite.png");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   React.useEffect(() => {
@@ -31,13 +32,15 @@ function IndexNavbar() {
         document.body.scrollTop > 399
       ) {
         setNavbarColor("");
-        setLogoPath("logobigsize.png");
+//        setLogoPath("logobigsize.png");
+        setTrans("transImg");
       } else if (
         document.documentElement.scrollTop < 400 ||
         document.body.scrollTop < 400
         ) {
           setNavbarColor("navbar-transparent");
-          setLogoPath("logowhite.png");
+//          setLogoPath("logowhite.png");
+        setTrans("");
       }
     };
     window.addEventListener("scroll", updateNavbarColor);
@@ -74,13 +77,16 @@ function IndexNavbar() {
         <Container>
           <div className="navbar-translate">
           <Nav navbar>
-                <NavLink
-                  href="/"
-                >
-              <img className="mr-2" src={(!collapseOpen&&(document.documentElement.scrollTop < 400 ||
-        document.body.scrollTop < 400) ? require("assets/img/"+logoPath) : require("assets/img/logobigsize.png"))} width="8%"></img>
-              {/*isMobile ? "" : "Avenue Q"*/}
-              <h6 style={{display:'inline-block', fontSize: '15px', marginBottom: '0px', verticalAlign:'middle'}}>2020 애비뉴큐</h6>
+              <NavLink
+                href="/"
+                style={{display:'-webkit-inline-box'}}
+              >
+
+                <div id="logo" style={{position:'relative', width:'50%'}}>
+                <img className={"mr-2 " + trans} src={require("assets/img/logowhite.png")} style={{zIndex:'10', width:'100%'}}></img>
+                <img className={"mr-2"} src={require("assets/img/logobigsize.png")} style={{width:'100%'}}></img>
+              </div>
+              <h6 className="ml-2" style={{ display: 'inline-block', fontSize: '15px', marginBottom: '5px', verticalAlign: 'middle' }}>2020 애비뉴큐</h6>
                 </NavLink>
             </Nav>
             <button
