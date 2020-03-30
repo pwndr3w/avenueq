@@ -54,7 +54,8 @@ function Index() {
           <About style={{ fontFamily: 'Noto Sans KR, sans-family' }}/>
           <AddMedia />
           <Synopsis />
-          <Cast />
+          <Carousel />
+          {/* <Cast /> */}
           <CastingCalendar />
           <Notice/>
           <CreativeTeam />
