@@ -32,14 +32,12 @@ function IndexNavbar() {
         document.body.scrollTop > 399
       ) {
         setNavbarColor("");
-//        setLogoPath("logobigsize.png");
         setTrans("transImg");
       } else if (
         document.documentElement.scrollTop < 400 ||
         document.body.scrollTop < 400
-        ) {
-          setNavbarColor("navbar-transparent");
-//          setLogoPath("logowhite.png");
+      ) {
+        setNavbarColor("navbar-transparent");
         setTrans("");
       }
     };
@@ -94,6 +92,14 @@ function IndexNavbar() {
               onClick={() => {
                 document.documentElement.classList.toggle("nav-open");
                 setCollapseOpen(!collapseOpen);
+                if (!collapseOpen&&document.documentElement.scrollTop < 400 &&
+                  document.body.scrollTop < 400) {
+                    setTrans("transImg");
+                }
+                if (collapseOpen&&document.documentElement.scrollTop < 400 &&
+                  document.body.scrollTop < 400) {
+                    setTrans("");
+                }
               }}
               aria-expanded={collapseOpen}
               type="button"
