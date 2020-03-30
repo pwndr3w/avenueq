@@ -39,6 +39,16 @@ function CreativeTeam() {
                   </div>
                 </Col>
               </Row>
+              <Row className="justify-content-center">
+                <Col md="11" lg="11" sm="11" xs="11">
+                  <h5 className="title">
+                    도움주시는 분들<br></br>
+                  </h5>
+                  <h5 className="description">
+                  양유성 신경수 강수지 전선빈 최웅선 류국현 김경미 김지유 성중범 손정필 송수현 오정우 이상아 장동주 차윤주 최지선 편유리
+                  </h5>
+                </Col>
+              </Row>
             </div>
         
         </Container>
