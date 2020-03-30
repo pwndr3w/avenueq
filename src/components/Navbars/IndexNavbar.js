@@ -80,11 +80,11 @@ function IndexNavbar() {
                 style={{display:'-webkit-inline-box'}}
               >
 
-                <div id="logo" style={{position:'relative', width:'50%'}}>
+                <div id="logo" style={{position:'relative'}}>
                 <img className={"mr-2 " + trans} src={require("assets/img/logowhite.png")} style={{zIndex:'10', width:'100%'}}></img>
                 <img className={"mr-2"} src={require("assets/img/logobigsize.png")} style={{width:'100%'}}></img>
               </div>
-              <h6 className="ml-2" style={{ display: 'inline-block', fontSize: '15px', marginBottom: '5px', verticalAlign: 'middle' }}>2020 애비뉴큐</h6>
+              <h6 className="ml-2" style={{ display: 'inline-block', fontSize: '15px', marginBottom: '2px', verticalAlign: 'middle' }}>2020 애비뉴큐</h6>
                 </NavLink>
             </Nav>
             <button

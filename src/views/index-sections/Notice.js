@@ -17,13 +17,17 @@ function Notice() {
             >
               <Container>
                     
-                    <Row className="justify-content-md-center">
-                        <Col className="text-center" lg="12" md="12">
+                    <Row className="justify-content-center">
+                        <Col className="text-center" lg="12" md="12" sm="10" xs="10">
                             <img src={require('assets/img/info_title.png')} ></img>
+                        </Col>
+                    </Row>
+                    <Row className="justify-content-center">
+                        <Col className="text-center" lg="12" md="12" sm="12" xs="12">
                             <br></br>
                             <br></br>
                             <br></br>
-                            <p><iframe width="100%" height="450" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJOfeCXl2efDURMdSGWL0KeVA&key=AIzaSyBUxmgTnthFyGHPFv7pkD4wEw11F4kzdNo"></iframe></p>
+                            <p><iframe width="100%" height="400vh" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJOfeCXl2efDURMdSGWL0KeVA&key=AIzaSyBUxmgTnthFyGHPFv7pkD4wEw11F4kzdNo"></iframe></p>
                             <h4 align="left">극 장&nbsp; :&nbsp; 구로 예술나무씨어터</h4>
                             <h4 align="left">주 최&nbsp; :&nbsp; 러뷰지컬</h4>
                             <h4 align="left">후 원&nbsp; :&nbsp; (주)아라핀, (주)원데이원커뮤니케이션 </h4>
