@@ -4,7 +4,6 @@ import Gallery from "react-photo-gallery";
 import { Row, Col, Container } from "reactstrap";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";          // 맨 윗줄 메뉴바
-import LandingPageHeader from "components/Headers/TeamAInfoHeader.js";
 
 export const photos = [
     {
@@ -72,7 +71,6 @@ function AvenueQGallery() {
     <>          
     <IndexNavbar />
       <div className="wrapper">
-          <LandingPageHeader />
           <Row className="justify-content-md-center">
               <Col className="text-center" lg="6" md="6">
                   <h1 className="title">Team A</h1>
