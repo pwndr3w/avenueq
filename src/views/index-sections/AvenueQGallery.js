@@ -5,54 +5,160 @@ import { Row, Col, Container } from "reactstrap";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";          // 맨 윗줄 메뉴바
 
+
 export const photos = [
     {
-      src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+      src: require("../../assets/img/gallery/3.jpg"),
+      width: 2,
+      height: 3
+    },
+    {
+      src: require("../../assets/img/gallery/2.jpg"),
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
-      width: 1,
-      height: 1
-    },
-    {
-      src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
-      width: 4,
+      src: require("../../assets/img/gallery/4.jpg"),
+      width: 2,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/PpOHJezOalU/800x599",
-      width: 4,
+      src: require("../../assets/img/gallery/5.jpg"),
+      width: 2,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
-      width: 4,
+      src: require("../../assets/img/gallery/6.jpg"),
+      width: 2,
+      height: 3
+    },
+    {
+      src: require("../../assets/img/gallery/7.jpg"),
+      width: 2,
+      height: 3
+    },
+    {
+      src: require("../../assets/img/gallery/8.jpg"),
+      width: 2,
+      height: 3
+    },
+    {
+      src: require("../../assets/img/gallery/9.jpg"),
+      width: 2,
+      height: 3
+    },
+    {
+      src: require("../../assets/img/gallery/10.jpg"),
+      width: 3,
+      height: 2
+    },
+    {
+      src: require("../../assets/img/gallery/11.jpg"),
+      width: 3,
+      height: 2
+    },
+    {
+      src: require("../../assets/img/gallery/12.jpg"),
+      width: 2,
+      height: 3
+    },
+    {
+      src: require("../../assets/img/gallery/13.jpg"),
+      width: 2,
+      height: 3
+    },
+    {
+      src: require("../../assets/img/gallery/14.jpg"),
+      width: 2,
+      height: 3
+    },
+    {
+      src: require("../../assets/img/gallery/15.jpg"),
+      width: 2,
+      height: 3
+    },
+    {
+      src: require("../../assets/img/gallery/16.jpg"),
+      width: 2,
+      height: 3
+    },
+    {
+      src: require("../../assets/img/gallery/1.jpg"),
+      width: 3,
+      height: 2
+    },
+    {
+      src: require("../../assets/img/gallery/17.jpg"),
+      width: 2,
+      height: 3
+    },
+    {
+      src: require("../../assets/img/gallery/18.jpg"),
+      width: 2,
+      height: 3
+    },
+    {
+      src: require("../../assets/img/gallery/19.jpg"),
+      width: 2,
+      height: 3
+    },
+    {
+      src: require("../../assets/img/gallery/20.jpg"),
+      width: 2,
+      height: 3
+    },
+    {
+      src: require("../../assets/img/gallery/21.jpg"),
+      width: 2,
+      height: 3
+    },
+    {
+      src: require("../../assets/img/gallery/22.jpg"),
+      width: 2,
+      height: 3
+    },
+    {
+      src: require("../../assets/img/gallery/23.jpg"),
+      width: 2,
+      height: 3
+    },
+    {
+      src: require("../../assets/img/gallery/24.jpg"),
+      width: 2,
+      height: 3
+    },
+    {
+      src: require("../../assets/img/gallery/25.jpg"),
+      width: 2,
+      height: 3
+    },
+    {
+      src: require("../../assets/img/gallery/26.jpg"),
+      width: 2,
+      height: 3
+    },
+    {
+      src: require("../../assets/img/gallery/27.jpg"),
+      width: 3,
+      height: 2
+    },
+    {
+      src: require("../../assets/img/gallery/28.jpg"),
+      width: 2,
+      height: 3
+    },
+    {
+      src: require("../../assets/img/gallery/29.jpg"),
+      width: 2,
+      height: 3
+    },
+    {
+      src: require("../../assets/img/gallery/30.jpg"),
+      width: 2,
       height: 3
     }
   ];
-
+  
 function AvenueQGallery() {
   const [currentImage, setCurrentImage] = React.useState(0);
   const [viewerIsOpen, setViewerIsOpen] = React.useState(false);
@@ -71,13 +177,9 @@ function AvenueQGallery() {
     <>          
     <IndexNavbar />
       <div className="wrapper">
-          <Row className="justify-content-md-center">
-              <Col className="text-center" lg="6" md="6">
-                  <h1 className="title">Team A</h1>
-              </Col>
-          </Row>
-           <div className="section section-team text-center">
-              <Container>
+           <div className="section section-download text-center" data-background-color="black">
+          <Container
+          >
                 <div>
                   <Gallery photos={photos} onClick={openLightbox} />
                   <ModalGateway>
