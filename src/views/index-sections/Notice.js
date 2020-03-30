@@ -27,7 +27,7 @@ function Notice() {
                             <br></br>
                     <Row className="justify-content-center">
                         <Col className="text-center" lg="12" md="12" sm="12" xs="12">
-                            <p><iframe width="100%" height="400vh" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJOfeCXl2efDURMdSGWL0KeVA&key=AIzaSyBUxmgTnthFyGHPFv7pkD4wEw11F4kzdNo"></iframe></p>
+                            <p><iframe width="100%" height="400vh" frameBorder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJOfeCXl2efDURMdSGWL0KeVA&key=AIzaSyBUxmgTnthFyGHPFv7pkD4wEw11F4kzdNo"></iframe></p>
                         </Col>
                     </Row>
                     

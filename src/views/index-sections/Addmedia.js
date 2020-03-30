@@ -27,7 +27,7 @@ function AddMedia() {
                     <Row className="justify-content-center" style={{height:"50vh"}}>
                         <Col className="text-center" lg="6" md="6" sm="10" xs="10">
                             <div>
-                                <iframe align ="left" width="100%" height="100%" frameborder="0" src="https://www.youtube.com/embed/dSfX-MZjGdw?list=PLNU2fRUhH0U-y5CRSfis0ayPFxOLafwiO" frameborder="0"></iframe>
+                                <iframe align ="left" width="100%" height="100%" frameBorder="0" src="https://www.youtube.com/embed/dSfX-MZjGdw?list=PLNU2fRUhH0U-y5CRSfis0ayPFxOLafwiO" frameborder="0"></iframe>
                             </div>
                         </Col>
                         <Col style={{position:"relative"}} lg="6" md="6" sm="8" xs="8">
