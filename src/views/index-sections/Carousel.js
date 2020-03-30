@@ -57,7 +57,7 @@ const items = [
   },
   {
     castName:"Gary Coleman",
-    src:["김설이","김지언/Jieon Kim"]
+    src:["김설이/Seolyi Kim","김지언/Jieon Kim"]
   },
   {
     castName:"Lucy",

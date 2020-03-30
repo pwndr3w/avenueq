@@ -115,16 +115,6 @@ function IndexNavbar() {
             navbar
           >
             <Nav navbar>
-              <NavItem>
-                <NavLink
-                  href="#"
-                  onClick={e => {
-                    e.preventDefault();
-                  }}
-                >
-                  <h6 style={menuTextStyle}>About</h6>
-                </NavLink>
-              </NavItem>
               <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
@@ -151,17 +141,10 @@ function IndexNavbar() {
               </UncontrolledDropdown>
               <NavItem>
                 <NavLink
-                  href="#pablo"
-                  onClick={e => {
-                    e.preventDefault();
-                    document
-                      .getElementById("download-section")
-                      .scrollIntoView();
-                    }}
-                    style={menuAStyle}
-                  >
-                  <i className="fas fa-2x fa-question design_app mr-1" style={menuIconStyle}></i>
-                  <h6 style={menuTextStyle}>Lovusical</h6>
+                  to="/gallery" tag={Link}
+                >
+                  <i className="far fa-2x fa-images design_app mr-1" style={menuIconStyle}></i>
+                  <h6 style={menuTextStyle}>Gallery</h6>
                 </NavLink>
               </NavItem>
               <NavItem>

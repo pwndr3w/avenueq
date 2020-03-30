@@ -31,6 +31,7 @@ import LoginPage from "./views/examples/LoginPage.js";
 import LandingPage from "./views/LandingPage.js";
 import TeamAInfo from "./views/index-sections/TeamAInfo.js"
 import TeamBInfo from "./views/index-sections/TeamBInfo.js"
+import AvenueQGallery from "./views/index-sections/AvenueQGallery.js"
 import ProfilePage from "./views/examples/ProfilePage.js";
 
 ReactDOM.render(
@@ -38,6 +39,7 @@ ReactDOM.render(
     <Route path="/" exact={true} component={Index}/>
     <Route path="/teamA" exact={true} component={TeamAInfo}/>
     <Route path="/teamB" exact={true} component={TeamBInfo}/>
+    <Route path="/gallery" exact={true} component={AvenueQGallery}/>
   </HashRouter>,
 
   // <BrowserRouter>
