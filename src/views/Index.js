@@ -31,6 +31,7 @@ import About from "./index-sections/About.js";
 import Synopsis from "./index-sections/Synopsis.js";
 import Lovusical from "./index-sections/Lovusical.js";
 import AddMedia from "./index-sections/Addmedia.js";
+import LovusicalSummary from "./index-sections/LovusicalSummary.js";
 function Index() {
   React.useEffect(() => {
     document.body.classList.add("index-page");
@@ -49,6 +50,7 @@ function Index() {
       <div className="wrapper">
         <IndexHeader />
         <div className="main">
+          <LovusicalSummary />
           <About style={{ fontFamily: 'Noto Sans KR, sans-family' }}/>
           <AddMedia />
           <Synopsis />

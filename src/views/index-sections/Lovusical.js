@@ -14,7 +14,7 @@ function Lovusical() {
         id="download-section"
       >
         <Container>
-          <Row className="justify-content-md-center">
+          <Row className="justify-content-center">
             <Col className="text-center" lg="12" md="12">
               <h1 className="title">We Are Lovusical!</h1>
               <h5 className="description">

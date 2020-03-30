@@ -50,7 +50,6 @@ function Cast() {
     <>
       <div
         className="section"
-        background-color="#d09c59"
         id="cast-section"
       >
         <Container>
