@@ -6,7 +6,7 @@ import { Container } from "reactstrap";
 
 function DarkFooter() {
   return (
-    <footer className="footer" data-background-color="black">
+    <footer className="footer" data-background-color="black" style={{borderTopStyle:'dotted'}}>
       <Container>
         <nav>
           <ul>
@@ -21,17 +21,15 @@ function DarkFooter() {
         <div className="copyright" id="copyright">
           © {new Date().getFullYear()}, Designed by{" "}
           <a
-            href="https://www.invisionapp.com?ref=nukr-dark-footer"
-            target="_blank"
+            href="#"
           >
-            Invision
+            Hanson Lee
           </a>
-          . Coded by{" "}
+          .<br></br> Coded by{" "}
           <a
-            href="https://www.creative-tim.com?ref=nukr-dark-footer"
-            target="_blank"
+            href="#"
           >
-            Andrew Kim
+            Andrew Kim, Kukhee Park, Mago Stark
           </a>
           .
         </div>
