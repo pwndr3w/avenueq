@@ -25,7 +25,7 @@ function DarkFooter() {
           >
             Hanson Lee
           </a>
-          .<br></br> Coded by{" "}
+          .<br></br> Developed by{" "}
           <a
             href="#"
           >
