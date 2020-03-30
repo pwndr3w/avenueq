@@ -1,5 +1,9 @@
 @media screen and (max-width: 991px){
     @include mobileTypo();
+    #logo{
+        width:7vw!important;
+    }
+
     .navbar img{
         top:55%;
         left:40%;
@@ -121,6 +125,11 @@
 }
 
 @media screen and (min-width: 992px){
+
+    #logo{
+        width:4vw!important;
+    }
+
   .navbar-collapse:not(.has-image) {
     background: transparent !important;
 }
@@ -400,6 +409,9 @@
     }
     .aboutDescription{
         font-size: 0.8em;
+    }
+    #logo{
+        width: 3vw!important;
     }
 }
 

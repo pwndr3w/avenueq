@@ -6,9 +6,6 @@ function AddMedia() {
     return (
         <>
             <div
-                className="section section-download"
-                data-background-color="black"
-                id="download-section"
                 style={{
                     backgroundColor: '#ffd800',
                     backgroundRepeat: 'no-repeat',
@@ -18,7 +15,7 @@ function AddMedia() {
             >
                 <Container>
                     <Row className="justify-content-center">
-                        <Col className="mb-5" lg="8" md="8" sm="11" xs="11">
+                        <Col className="mb-5 mt-5" lg="8" md="8" sm="11" xs="11">
                             <img className="mb-3" src={require('assets/img/info_title.png')} ></img>                
                         </Col>
                     </Row>
