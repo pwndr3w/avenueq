@@ -1,5 +1,6 @@
 import React from 'react';
 import { Table, Container, Row, Col } from 'reactstrap';
+import { isMobile } from 'react-device-detect';
 
 const dividerStyle = {
     marginTop:"-6vh"
@@ -119,7 +120,7 @@ function CastingCalendar() {
         <>
     <div
         className="section"
-        style={{backgroundColor : "#df5d07", fontSize:"10px"}}
+        style={{backgroundColor : "#df5d07", fontSize: isMobile?"10px":"14px"}}
         id="calendar-section"
       >
         <Container>
