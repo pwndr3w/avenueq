@@ -9,7 +9,6 @@ import { Button, Container, Row, Col, UncontrolledTooltip } from "reactstrap";
 
 function Synopsis() {
   const isBigScreen = useMediaQuery({ query: '(min-device-width: 565px)' })
-  const textWidth = () => isBigScreen ? '565px' : window.innerWidth-1000+'px';
   return (
     <>
       <div
