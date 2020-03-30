@@ -124,12 +124,25 @@ function CastingCalendar() {
         id="calendar-section"
       >
         <Container>
-            <Row className="justify-content-md-center">
-                        <Col className="text-center" lg="12" md="12">
-                            <img src={require('assets/img/calendar_title.png')} ></img>
-                          
-                </Col>
-                    </Row>    
+            <Row className="justify-content-center mb-3">
+              <Col className="text-center" lg="12" md="12" sm="10" xs="10">
+                <img src={require('assets/img/calendar_title.png')} ></img>              
+              </Col>
+            </Row>    
+            {isMobile ?
+              <>
+                <Row className="justify-content-between">
+                  <Col className="text-center" lg="3" md="3" sm="3" xs="3">
+                    <img src={require('assets/img/cast_leftbtn.png')} ></img>              
+                  </Col>
+                  <Col className="text-center" lg="3" md="3" sm="3" xs="3">
+                    <img src={require('assets/img/cast_rightbtn.png')} ></img>              
+                  </Col>
+                </Row>                    
+              </>
+              :
+            ""
+            }
                     <br></br>
                     <br></br>
             <CastingTable />        
