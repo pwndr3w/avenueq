@@ -5,8 +5,12 @@ function CreativeTeam() {
     return (
         <>
         <div className="section section-team text-center">
-                <Container>
-                    <img src={require('assets/img/creative_title.png')} ></img>
+          <Container>
+            <Row className="justify-content-center">
+              <Col lg="7" md="7" sm="10" xs="10">
+                    <img src={require('assets/img/creative_title.png')} ></img>              
+              </Col>
+            </Row>
                     <br></br>
                     <br></br>
                     <br></br>

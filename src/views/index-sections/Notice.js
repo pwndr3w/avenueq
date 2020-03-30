@@ -22,26 +22,38 @@ function Notice() {
                             <img src={require('assets/img/info_title.png')} ></img>
                         </Col>
                     </Row>
+                            <br></br>
+                            <br></br>
+                            <br></br>
                     <Row className="justify-content-center">
                         <Col className="text-center" lg="12" md="12" sm="12" xs="12">
-                            <br></br>
-                            <br></br>
-                            <br></br>
                             <p><iframe width="100%" height="400vh" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJOfeCXl2efDURMdSGWL0KeVA&key=AIzaSyBUxmgTnthFyGHPFv7pkD4wEw11F4kzdNo"></iframe></p>
-                            <h4 align="left">극 장&nbsp; :&nbsp; 구로 예술나무씨어터</h4>
-                            <h4 align="left">주 최&nbsp; :&nbsp; 러뷰지컬</h4>
-                            <h4 align="left">후 원&nbsp; :&nbsp; (주)아라핀, (주)원데이원커뮤니케이션 </h4>
-                            <h4 align="left">예매 가격&nbsp; :&nbsp; 10,000원</h4>
-                            <h4 align="left">관람 연령&nbsp; :&nbsp; 15세 이상</h4>
-                            <h4 align="left">공연 시간&nbsp; :&nbsp; 150분(1막 80분 / 2막 + 커튼콜 60분 / 인터미션 10분 포함 / 6공)</h4>
-                            <h4 align="left">공연 일정</h4>
-                            <h5 align="left">&nbsp; 1)&nbsp; 4/25(토) - (A팀)12:00-(B팀)15:30-(AC팀)19:00</h5>
-                            <h5 align="left">&nbsp; 2)&nbsp; 4/26(일) - (B팀)11:30-(A팀)15:00-(BC팀)18:30</h5>
+                        </Col>
+                    </Row>
+                    
+                    <Row className="justify-content-center">
+                        <Col className="text-center" lg="12" md="12" sm="12" xs="12">
+                            <h4 align="left" style={{lineHeight:'40px'}}>
+                                극 장 : 구로 예술나무씨어터<br></br>
+                                주 최 : 러뷰지컬<br></br>
+                                후 원 : (주)아라핀, (주)원데이원커뮤니케이션<br></br>
+                                예매 가격 : 10,000원<br></br>
+                                관람 연령 : 15세 이상<br></br>
+                                공연 시간 : 150분(1막 80분 / 2막 + 커튼콜 60분 / 인터미션 10분 포함 / 6공)<br></br>
+                                <br></br>
+                                공연 일정<br></br>
+                            </h4>
+                            <h5 align="left" style={{lineHeight:'35px'}}>
+                                &nbsp;&nbsp;1) 4/25(토) - (A팀)12:00-(B팀)15:30-(AC팀)19:00<br></br>
+                                &nbsp;&nbsp;2) 4/26(일) - (B팀)11:30-(A팀)15:00-(BC팀)18:30<br></br>
+                            </h5>
                             <h4 align="left">주의 사항</h4>
-                            <h5 align="left">&nbsp; 1) &nbsp; 예매시 지정한 좌석에 착석해 주세요 </h5>
-                            <h5 align="left">&nbsp; 2) &nbsp; 공연 15분 전까지 입장가능(공연 시작 후 입장 불가 -> 인터미션 입장)</h5>
-                            <h5 align="left">&nbsp; 3) &nbsp; 음식물 반입금지 </h5>
-                            <h5 align="left">&nbsp; 4) &nbsp; 코로나 예방을 위해 극장 자체 소독중</h5>
+                            <h5 align="left" style={{lineHeight:'35px'}}>
+                                &nbsp; 1) &nbsp; 예매시 지정한 좌석에 착석해 주세요<br></br>
+                                &nbsp; 2) &nbsp; 공연 15분 전까지 입장가능(공연 시작 후 입장 불가 -> 인터미션 입장)<br></br>
+                                &nbsp; 3) &nbsp; 음식물 반입금지<br></br>
+                                &nbsp; 4) &nbsp; 코로나 예방을 위해 극장 자체 소독중
+                            </h5>
                         </Col>
                     </Row>
                 </Container>
