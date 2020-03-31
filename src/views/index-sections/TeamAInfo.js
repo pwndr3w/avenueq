@@ -40,7 +40,7 @@ function TeamAInfo() {
                     <TeamInfoDetail castName="이브" castType="2" actorType="1" src={["김보연/Boyeon Kim", "임겨레/Kyeorei Lim"]} />
                     <TeamInfoDetail castName="니키 & 로드" actorType="1" src={["이원종/Wonjong Lee", "김준범/Junbeom Kim"]} />
                     <TeamInfoDetail castName="루시 & 개리 & 트래키" actorType="1" src={["안상현/Sanghyeon An", "김설이/Seolyi Kim", "김무준/Mujun Kim"]} />
-                    <TeamInfoDetail castName="베드 베어즈" actorType="1" src={["김재혁/베드 베어즈 남/Jaehyeok Kim", "박은영/베드 베어즈 여/Eunyoung Park"]} />
+                    <TeamInfoDetail castName="베드 베어즈" actorType="1" src={["김재혁/Jaehyeok Kim", "박은영/Eunyoung Park"]} />
                     <TeamInfoDetail actorType="1" src={["김민성/Minsung Kim", "조희령/Heeryeong Jo"]} />
                     <TeamInfoDetail castName="앙상블" actorType="2" src={["윤한솔/Hansol Yun", "이한솜/Hansom Lee", "박국희/Kukhee Park", "이기림/Kirim Lee"]} />
                 </Container>
