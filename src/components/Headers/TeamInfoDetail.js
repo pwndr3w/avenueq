@@ -10,7 +10,7 @@ import {
     Col,
     Carousel,
     CarouselItem,
-    CarouselIndicators
+    CarouselIndicators,
 } from "reactstrap";
 import CastImg from "views/index-sections/CastImg.js";
 
@@ -37,7 +37,7 @@ function EnsenbleImgLayout({ src }) {
     const englishName = src.split("/")[2];
     return (
         <>
-            <Col className="text-center">
+            <Col className="text-center" lg="3" md="3" sm="3" xs="3">
                 <CastImg src={korean} />
                 <br></br>
                 <br></br>
@@ -67,13 +67,22 @@ function CoupleImgLayout({ src }) {
 
 
 function CastDetail(props) {
+    let castType = props.castType;
+    let showText;
 
-    if (props.actorType == '1') {  // �迪
+    if (castType == 2) {
+        showText = <div>{props.castName}<br/>(더블 캐스팅)</div>
+    }
+    else {
+        showText = <div>{props.castName}</div>
+    }
+
+    if (props.actorType == '1') {  // 배역
         return (
             <>
                 <Row className="justify-content-center">
                     <Col className="text-center" lg="12" md="12">
-                        <h2 className="title">{props.castName}</h2>
+                        <h2 className="title"> {showText} </h2>
                     </Col>
                 </Row>
                 <br></br>
@@ -86,11 +95,11 @@ function CastDetail(props) {
             </>
         );
     }
-    else if (props.actorType == '2') { //����
+    else if (props.actorType == '2') { //앙상블
         return (
             <>
                 <Row className="justify-content-center">
-                    <Col className="text-center">
+                    <Col className="text-center" lg="12" md="12">
                         <h2 className="title">{props.castName}</h2>
                     </Col>
                 </Row>
@@ -102,7 +111,7 @@ function CastDetail(props) {
             </>
         );
     }
-    else if (props.actorType == '3') { //Ŀ��
+    else if (props.actorType == '3') { //커플
         return (
             <>
                 <Row className="justify-content-center">
