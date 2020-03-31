@@ -17,7 +17,7 @@
 */
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Switch, Redirect, HashRouter } from "react-router-dom";
+import { Route, HashRouter } from "react-router-dom";
 
 // styles for this kit
 import "assets/css/bootstrap.min.css";
@@ -26,13 +26,9 @@ import "assets/demo/demo.css";
 import "assets/demo/nucleo-icons-page-styles.css";
 // pages for this kit
 import Index from "./views/Index.js";
-import NucleoIcons from "./views/NucleoIcons.js";
-import LoginPage from "./views/examples/LoginPage.js";
-import LandingPage from "./views/LandingPage.js";
 import TeamAInfo from "./views/index-sections/TeamAInfo.js"
 import TeamBInfo from "./views/index-sections/TeamBInfo.js"
 import AvenueQGallery from "./views/index-sections/AvenueQGallery.js"
-import ProfilePage from "./views/examples/ProfilePage.js";
 
 ReactDOM.render(
   <HashRouter>
@@ -41,28 +37,5 @@ ReactDOM.render(
     <Route path="/teamB" exact={true} component={TeamBInfo}/>
     <Route path="/gallery" exact={true} component={AvenueQGallery}/>
   </HashRouter>,
-
-  // <BrowserRouter>
-  //   <Switch>
-  //     <Switch>
-  //     <Route path="/index" render={props => <Index {...props} />} />
-  //       <Route
-  //         path="/nucleo-icons"
-  //         render={props => <NucleoIcons {...props} />}
-  //       />
-  //       <Route
-  //         path="/landing-page"
-  //         render={props => <LandingPage {...props} />}
-  //       />
-  //       <Route
-  //         path="/profile-page"
-  //         render={props => <ProfilePage {...props} />}
-  //       />
-  //       <Route path="/login-page" render={props => <LoginPage {...props} />} />
-  //       <Redirect to="/landing-page" />
-  //       <Redirect from="/" to="/landing-page" />
-  //     </Switch>
-  //   </Switch>
-  // </BrowserRouter>,
   document.getElementById("root")
 );

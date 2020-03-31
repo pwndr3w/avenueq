@@ -2,9 +2,6 @@ import React from "react";
 import { useMediaQuery } from "react-responsive";
 import { isMobile } from 'react-device-detect';
 
-// reactstrap components
-import { Button, Container, Row, Col, UncontrolledTooltip } from "reactstrap";
-
 // core components
 
 function Synopsis() {

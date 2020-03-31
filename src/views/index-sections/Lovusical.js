@@ -1,7 +1,7 @@
 import React from "react";
 
 // reactstrap components
-import { Button, Container, Row, Col, UncontrolledTooltip } from "reactstrap";
+import { Container, Row, Col} from "reactstrap";
 import { isMobile } from "react-device-detect";
 
 // core components
