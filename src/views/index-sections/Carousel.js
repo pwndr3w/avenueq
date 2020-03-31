@@ -69,7 +69,7 @@ const items = [
   },
   {
     castName:"Bad Idea Bears & Ensemble",
-    src:["김재혁/Jaehyeok Kim","박은영/Eunyoung Park","김민성/Minsung Kim","조희령","윤한솔/Hansol Yun","이한솜/Hansom Lee","박국희/Kukhee Park","이기림/KiRim Lee"]
+    src:["김재혁/Jaehyeok Kim","박은영/Eunyoung Park","김민성/Minsung Kim","조희령/Heeryeong Jo","윤한솔/Hansol Yun","이한솜/Hansom Lee","박국희/Kukhee Park","이기림/KiRim Lee"]
   }
 ];
 
