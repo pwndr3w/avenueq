@@ -29,7 +29,7 @@ function TeamAInfo() {
             <div className="wrapper">
                 <TeamPageHeader src={["A팀"]} />
                 <Container>
-                    <Row className="section section-download">
+                    <Row className="mt-5 my-5">
                         <Col className="text-center" lg="12" md="12">
                             <img src={require('assets/img/teama_title.png')} ></img>
                         </Col>
