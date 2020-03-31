@@ -23,26 +23,26 @@ function TeamAInfo() {
             document.body.classList.remove("sidebar-collapse");
         };
     });
-    return (      
-        <>          
+    return (
+        <>
           <IndexNavbar />
             <div className="wrapper">
-                <TeamPageHeader src={["A팀"]} />
+                <TeamPageHeader src={["A팀"]}/>
                 <Container>
                     <Row className="mt-5 my-5">
                         <Col className="text-center" lg="12" md="12">
                             <img src={require('assets/img/teama_title.png')} ></img>
                         </Col>
-                    </Row>    
-                    <TeamInfoDetail castName="프린스턴" actorType="1" src={["황두현/Duhyun Hwang"]} />                            
-                    <TeamInfoDetail castName="케이트" castType ="2" actorType="1" src={["이신정/Sinjeong Lee", "홍세나/Serena Hong"]} />                            
-                    <TeamInfoDetail castName="브라이언" actorType="1" src={["김연천/Yeoncheon Kim"]} /> 
-                    <TeamInfoDetail castName="이브" castType="2" actorType="1" src={["김보연/Boyeon Kim", "임겨레/Kyeorei Lim"]} /> 
-                    <TeamInfoDetail castName="니키 & 로드" actorType="1" src={["이원종/Wonjong Lee", "김준범/Junbeom Kim"]} />  
-                    <TeamInfoDetail castName="루시 & 개리 & 트래키" actorType="1" src={["안상현/Sanghyeon An", "김설이/Seolyi Kim", "김무준/Mujun Kim"]} />  
-                    <TeamInfoDetail castName="베드 베어즈" actorType="1" src={["김재혁/베드 베어즈 남/Jaehyeok Kim", "박은영/베드 베어즈 여/Eunyoung Park"]} />    
+                    </Row>
+                    <TeamInfoDetail castName="프린스턴" actorType="1" src={["황두현/Duhyun Hwang"]} />
+                    <TeamInfoDetail castName="케이트" castType ="2" actorType="1" src={["이신정/Sinjeong Lee", "홍세나/Serena Hong"]} />
+                    <TeamInfoDetail castName="브라이언" actorType="1" src={["김연천/Yeoncheon Kim"]} />
+                    <TeamInfoDetail castName="이브" castType="2" actorType="1" src={["김보연/Boyeon Kim", "임겨레/Kyeorei Lim"]} />
+                    <TeamInfoDetail castName="니키 & 로드" actorType="1" src={["이원종/Wonjong Lee", "김준범/Junbeom Kim"]} />
+                    <TeamInfoDetail castName="루시 & 개리 & 트래키" actorType="1" src={["안상현/Sanghyeon An", "김설이/Seolyi Kim", "김무준/Mujun Kim"]} />
+                    <TeamInfoDetail castName="베드 베어즈" actorType="1" src={["김재혁/베드 베어즈 남/Jaehyeok Kim", "박은영/베드 베어즈 여/Eunyoung Park"]} />
                     <TeamInfoDetail actorType="1" src={["김민성/Minsung Kim", "조희령/Heeryeong Jo"]} />
-                    <TeamInfoDetail castName="앙상블" actorType="2" src={["윤한솔/Hansol Yun", "이한솜/Hansom Lee", "박국희/Kukhee Park", "이기림/Kirim Lee"]} />    
+                    <TeamInfoDetail castName="앙상블" actorType="2" src={["윤한솔/Hansol Yun", "이한솜/Hansom Lee", "박국희/Kukhee Park", "이기림/Kirim Lee"]} />
                 </Container>
             </div>
         </>
@@ -50,4 +50,3 @@ function TeamAInfo() {
 }
 
 export default TeamAInfo;
-

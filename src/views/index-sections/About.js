@@ -9,6 +9,26 @@ import { isMobile } from "react-device-detect";
  * .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto
  */
 function About() {
+  const [highlight, setHighlight] = React.useState("");
+  React.useEffect(() => {
+    const updateHighlight = () => {
+      if (
+        document.documentElement.scrollTop > 799 ||
+        document.body.scrollTop > 799
+      ) {
+        setHighlight("highlight");
+      } else if (
+        document.documentElement.scrollTop < 800 ||
+        document.body.scrollTop < 800
+      ) {
+        setHighlight("");
+      }
+    };
+    window.addEventListener("scroll", updateHighlight);
+    return function cleanup() {
+      window.removeEventListener("scroll", updateHighlight);
+    };
+  });
   const imgStyle = {
     position:'absolute', bottom:'0', left:'50%', transform:'translateX(-50%)'
   }
@@ -34,12 +54,12 @@ function About() {
                         <img src={require('assets/img/aboutBox1.png')} style={{width:'100%'}}>
                         </img>
                       </div>
-                      <div className="aboutTextBoxRow1" style={{position:'absolute', top:'36%', left:'50%', transform:'translateX(-50%)', width:'80%', fontSize:'1vw'}}>
+                      <div className={"aboutTextBoxRow1 "+highlight} style={{position:'absolute', top:'36%', left:'50%', transform:'translateX(-50%)', width:'80%', fontSize:'1vw'}}>
                         <h3 className="mb-2 aboutTitle" style={{
                           color: 'Black',
                           marginBottom: '4px',
                           fontWeight: 'bold'
-                        }}>Avenue Q</h3>
+                        }}><span>Avenue Q</span></h3>
                         <h5 className="description aboutDescription" style={{
                             color: 'Black'
                         }}>
@@ -57,12 +77,12 @@ function About() {
                         <img src={require('assets/img/aboutBox2.png')} style={{width:'100%'}}>
                         </img>
                       </div>
-                      <div className="aboutTextBoxRow2" style={{position:'absolute', top:'50%', left:'50%', transform:'translateX(-50%)', width:'80%', fontSize:'0.98vw'}}>
+                      <div className={"aboutTextBoxRow2 "+highlight} style={{position:'absolute', top:'50%', left:'50%', transform:'translateX(-50%)', width:'80%', fontSize:'0.98vw'}}>
                         <h3 className="mb-2 aboutTitle" style={{
                           color: 'Black',
                           marginBottom: '4px',
                           fontWeight: 'bold'
-                        }}>Black Comedy</h3>
+                        }}><span>Black Comedy</span></h3>
                         <h5 className="description aboutDescription" style={{
                             color: 'Black'
                         }}>
@@ -78,12 +98,12 @@ function About() {
                         <img src={require('assets/img/aboutBox3.png')} style={{width:'100%'}}>
                         </img>
                       </div>
-                      <div className="aboutTextBoxRow2" style={{position:'absolute', top:'50%', left:'50%', transform:'translateX(-50%)', width:'80%', fontSize:'0.98vw'}}>
+                      <div className={"aboutTextBoxRow2 "+highlight} style={{position:'absolute', top:'50%', left:'50%', transform:'translateX(-50%)', width:'80%', fontSize:'0.98vw'}}>
                         <h3 className="mb-2 aboutTitle" style={{
                           color: 'Black',
                           marginBottom: '4px',
                           fontWeight: 'bold'
-                        }}>It's YOUR story</h3>
+                        }}><span>It's YOUR story</span></h3>
                         <h5 className="description aboutDescription" style={{
                             color: 'Black'
                         }}>
