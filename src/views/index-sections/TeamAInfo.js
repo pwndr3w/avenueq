@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 // reactstrap components
 import {
     Container,
@@ -11,8 +11,6 @@ import IndexNavbar from "components/Navbars/IndexNavbar.js";          // 맨 윗
 import TeamPageHeader from "components/Headers/TeamPageHeader.js";
 import TeamInfoDetail from "components/Headers/TeamInfoDetail.js";
 function TeamAInfo() {
-    const [firstFocus, setFirstFocus] = React.useState(false);
-    const [lastFocus, setLastFocus] = React.useState(false);
     React.useEffect(() => {
         document.body.classList.add("landing-page");
         document.body.classList.add("sidebar-collapse");

@@ -6,8 +6,7 @@ import {
   Row,
   Col,
   Carousel,
-  CarouselItem,
-  CarouselIndicators
+  CarouselItem
 } from "reactstrap";
 import CastImg from "./CastImg"
 

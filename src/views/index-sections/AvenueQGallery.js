@@ -1,7 +1,6 @@
 import React, { useState, useCallback } from "react";
-import { render } from "react-dom";
 import Gallery from "react-photo-gallery";
-import { Row, Col, Container } from "reactstrap";
+import { Container } from "reactstrap";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";          // 맨 윗줄 메뉴바
 

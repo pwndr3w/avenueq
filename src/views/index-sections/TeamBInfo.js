@@ -1,11 +1,6 @@
 import React from "react";
 // reactstrap components
 import {
-    Button,
-    Input,
-    InputGroupAddon,
-    InputGroupText,
-    InputGroup,
     Container,
     Row,
     Col
@@ -17,8 +12,6 @@ import TeamPageHeader from "components/Headers/TeamPageHeader.js";
 import TeamInfoDetail from "components/Headers/TeamInfoDetail.js";
 
 function TeamB() {
-    const [firstFocus, setFirstFocus] = React.useState(false);
-    const [lastFocus, setLastFocus] = React.useState(false);
     
     React.useEffect(() => {
         document.body.classList.add("landing-page");
