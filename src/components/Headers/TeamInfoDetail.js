@@ -16,15 +16,14 @@ import CastImg from "views/index-sections/CastImg.js";
 
 function CastImgLayout({ src }) {
     const korean = src.split("/")[0];
-    const charname = src.split("/")[1];
-    const englishName = src.split("/")[2];
+    const englishName = src.split("/")[1];
     return (
         <>
             <Col className="text-center" lg="4" md="6" sm="6" xs="6">
                 <CastImg src={korean} />
                 <br></br>
                 <br></br>
-                <h3 className="description font-weight-bold">{charname}</h3>
+                <h3 className="description font-weight-bold">{korean}</h3>
                 <h6 className="description" style={{ position: "relative", top: "-20px" }}>{englishName}</h6>
             </Col>
         </>
@@ -33,15 +32,14 @@ function CastImgLayout({ src }) {
 
 function EnsenbleImgLayout({ src }) {
     const korean = src.split("/")[0];
-    const charname = src.split("/")[1];
-    const englishName = src.split("/")[2];
+    const englishName = src.split("/")[1];
     return (
         <>
             <Col className="text-center" lg="3" md="3" sm="3" xs="3">
                 <CastImg src={korean} />
                 <br></br>
                 <br></br>
-                <h3 className="description font-weight-bold">{charname}</h3>
+                <h3 className="description font-weight-bold">{korean}</h3>
                 <h6 className="description" style={{ position: "relative", top: "-20px" }}>{englishName}</h6>
             </Col>
         </>
