@@ -36,14 +36,14 @@ function TeamB() {
             <div className="wrapper">
                 <TeamPageHeader src={["B팀"]} />
                 <Container>
-                  <Row className="section section-download">
+                    <Row className="mt-5 my-5">
                       <Col className="text-center" lg="12" md="12">
                           <img src={require('assets/img/teamb_title.png')} ></img>
                       </Col>
                   </Row>    
                   <TeamInfoDetail castName="프린스턴" actorType="1" src={["양희승/프린스턴/Huiseung Yang"]} />
                   <TeamInfoDetail castName="케이트" castType="2" actorType="1" src={["민다희/케이트/Dahee Min", "홍세나/케이트/Serena Hong"]} />
-                  <TeamInfoDetail castName="브라이언" actorType="1" src={["이유미/이 브/Yumi Lee", "양정모/브라이언/Leo Yang", "임겨레/이 브/Kyeorei Lim"]} />
+                  <TeamInfoDetail castName="브라이언" actorType="1" src={["양정모/브라이언/Leo Yang"]} />
                   <TeamInfoDetail castName="이브" castType="2" actorType="1" src={["이유미/이 브/Yumi Lee", "임겨레/이 브/Kyeorei Lim"]} />
                   <TeamInfoDetail castName="니키 & 로드" actorType="1" src={["황지상/니 키/Jisang Hwang", "박상호/로 드/Sangho Park"]} />
                   <TeamInfoDetail castName="루시 & 개리 & 트래키" actorType="1" src={["안상현/루 시/Sanghyeon An", "김지언/개 리/Jieon Kim", "유병선/트래키/Byungsun Yu"]} />

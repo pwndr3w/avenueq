@@ -25,7 +25,7 @@ function CastImgLayout({ src }) {
                 <br></br>
                 <br></br>
                 <h3 className="description font-weight-bold">{charname}</h3>
-                <p className="description" style={{ position: "relative", top: "-20px" }}>{englishName}</p>
+                <h6 className="description" style={{ position: "relative", top: "-20px" }}>{englishName}</h6>
             </Col>
         </>
     );
@@ -42,7 +42,7 @@ function EnsenbleImgLayout({ src }) {
                 <br></br>
                 <br></br>
                 <h3 className="description font-weight-bold">{charname}</h3>
-                <p className="description" style={{ position: "relative", top: "-20px" }}>{englishName}</p>
+                <h6 className="description" style={{ position: "relative", top: "-20px" }}>{englishName}</h6>
             </Col>
         </>
     );
@@ -59,7 +59,7 @@ function CoupleImgLayout({ src }) {
                 <br></br>
                 <br></br>
                 <h3 className="description font-weight-bold">{charname}</h3>
-                <p className="description" style={{ position: "relative", top: "-20px" }}>{korean}</p>
+                <h6 className="description" style={{ position: "relative", top: "-20px" }}>{korean}</h6>
             </Col>
         </>
     );
