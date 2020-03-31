@@ -34,7 +34,7 @@ function About() {
                         <img src={require('assets/img/aboutBox1.png')} style={{width:'100%'}}>
                         </img>
                       </div>
-                      <div style={{position:'absolute', top:'36%', left:'50%', transform:'translateX(-50%)', width:'80%', fontSize:'1vw'}}>
+                      <div className="aboutTextBoxRow1" style={{position:'absolute', top:'36%', left:'50%', transform:'translateX(-50%)', width:'80%', fontSize:'1vw'}}>
                         <h3 className="mb-2 aboutTitle" style={{
                           color: 'Black',
                           marginBottom: '4px',
@@ -57,7 +57,7 @@ function About() {
                         <img src={require('assets/img/aboutBox2.png')} style={{width:'100%'}}>
                         </img>
                       </div>
-                      <div style={{position:'absolute', top:'50%', left:'50%', transform:'translateX(-50%)', width:'80%', fontSize:'0.98vw'}}>
+                      <div className="aboutTextBoxRow2" style={{position:'absolute', top:'50%', left:'50%', transform:'translateX(-50%)', width:'80%', fontSize:'0.98vw'}}>
                         <h3 className="mb-2 aboutTitle" style={{
                           color: 'Black',
                           marginBottom: '4px',
@@ -78,7 +78,7 @@ function About() {
                         <img src={require('assets/img/aboutBox3.png')} style={{width:'100%'}}>
                         </img>
                       </div>
-                      <div style={{position:'absolute', top:'50%', left:'50%', transform:'translateX(-50%)', width:'80%', fontSize:'0.98vw'}}>
+                      <div className="aboutTextBoxRow2" style={{position:'absolute', top:'50%', left:'50%', transform:'translateX(-50%)', width:'80%', fontSize:'0.98vw'}}>
                         <h3 className="mb-2 aboutTitle" style={{
                           color: 'Black',
                           marginBottom: '4px',

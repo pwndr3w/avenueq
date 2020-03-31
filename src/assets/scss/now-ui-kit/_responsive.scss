@@ -403,6 +403,17 @@
     }
 }
 
+@media screen and (min-width: 1350px){
+    .aboutTitle{
+        font-size: 1.7em;
+    }
+    .aboutDescription{
+        font-size: 0.9em;
+    }
+    #logo{
+        width: 3vw!important;
+    }
+}
 @media screen and (min-width: 1600px){
     .aboutTitle{
         font-size: 1.7em;
@@ -445,7 +456,7 @@ and ( orientation : portrait){
         top: 90vh;
     }
     .aboutDescription{
-        font-size: 1.5em;
+        font-size: 1em;
     }
 }
 
@@ -471,3 +482,14 @@ and ( orientation : portrait){
         font-size: 1.8em;
     }
 }
+
+@media screen and (max-width:1199px) and (min-width:1100px){
+    .aboutTextBoxRow1{
+        top:33%!important;
+    }
+    .aboutTextBoxRow2{
+        top:44%!important;
+    }
+    
+}
+
