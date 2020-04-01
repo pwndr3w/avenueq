@@ -128,13 +128,11 @@ function IndexNavbar() {
                 </DropdownToggle>
                 <DropdownMenu>
                   <DropdownItem to="/teamA" tag={Link}>
-                    <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
                     Team A
                   </DropdownItem>
                   <DropdownItem
                     to="/teamB" tag={Link}
                   >
-                    <i className="now-ui-icons design_bullet-list-67 mr-1"></i>
                     Team B
                   </DropdownItem>
                 </DropdownMenu>
