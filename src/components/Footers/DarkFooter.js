@@ -20,18 +20,8 @@ function DarkFooter() {
         </nav>
         <div className="copyright" id="copyright">
           © {new Date().getFullYear()}, Designed by{" "}
-          <a
-            href="#"
-          >
-            Hanson Lee
-          </a>
-          .<br></br> Developed by{" "}
-          <a
-            href="#"
-          >
-            Andrew Kim, Kukhee Park, Mago Stark
-          </a>
-          .
+          Hansom Lee.<br></br>
+          Developed by{" "}Andrew Kim, Kukhee Park, Mago Stark.
         </div>
       </Container>
     </footer>
