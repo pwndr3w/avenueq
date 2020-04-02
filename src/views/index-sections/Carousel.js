@@ -129,8 +129,6 @@ function CarouselSection() {
 
             </Col>
           </Row>      
-          <br></br>      
-          <br></br>      
           <Row className="justify-content-center">
             <Col lg="12" md="12">
               <Carousel
@@ -152,11 +150,9 @@ function CarouselSection() {
                     >
                   <Row className="justify-content-center">
                       <Col className="text-center" lg="12" md="12">
-                          <h1 className="title">{item.castName}</h1>
+                          <h2 className="title">{item.castName}</h2>
                       </Col>
                   </Row>
-                  <br></br>      
-                  <br></br>      
                   <Row className="justify-content-center">
                       {item.src.map(src => (
                           <CastImgLayout src={src}/>  
