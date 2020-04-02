@@ -1,16 +1,8 @@
 import React from "react";
 import { Container, Row, Col} from "reactstrap";
 import { isMobile } from "react-device-detect";
-import YouTube from "react-youtube";
 
 function AddMedia() {
-    const opts = {
-        width: '100%',
-        height: '390',
-        playerVars: { // https://developers.google.com/youtube/player_parameters
-          autoplay: 1
-        }
-      };
     return (
         <>
             <div
