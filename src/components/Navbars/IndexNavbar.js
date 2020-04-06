@@ -147,14 +147,7 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="#pablo"
-                  onClick={e => {
-                    e.preventDefault();
-                    document
-                    .getElementById("download-section")
-                    .scrollIntoView();
-                  }}
-                  style={isMobile ? mobileMenuStyle : menuAStyle}
+                 href="https://booking.naver.com/booking/12/bizes/20610/items/3381391" target="_blank"
                 >
                   <i className="fas fa-2x fa-ticket-alt design_app mr-1" style={menuIconStyle}></i>
                   <h6 style={menuTextStyle}>Tickets</h6>

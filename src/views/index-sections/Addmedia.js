@@ -22,7 +22,7 @@ function AddMedia() {
                     <Row className="justify-content-center" style={{height:isMobile?"":""}}>
                         <Col className={isMobile?"text-center mb-4":"text-center mb-5"} lg="6" md="6" sm="12" xs="12">
                             <div>
-                                <iframe align="left" width="100%" height={isMobile?"200px":"390px"} frameBorder="0" src="https://www.youtube.com/embed/dSfX-MZjGdw?list=PLNU2fRUhH0U-y5CRSfis0ayPFxOLafwiO" frameborder="0"></iframe>
+                                <iframe align="left" width="100%" height={isMobile ? "200px" : "390px"} frameBorder="0" src="https://www.youtube.com/embed/exEufg0eIfk" frameborder="0"></iframe>
                             </div>
                         </Col>
                         <Col className="mb-5" style={{position:"relative"}} lg="6" md="6" sm="7" xs="7">
