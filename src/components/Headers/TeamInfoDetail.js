@@ -69,10 +69,11 @@ function CastDetail(props) {
     let showText;
 
     if (castType == 2) {
-        showText = <div>{props.castName}<br/>(더블 캐스팅)</div>
+        showText = <div><h2 className="title">{props.castName}</h2>
+            <h3 style={{ position: "relative", top: "-30px" }}>(더블 캐스팅)</h3></div>
     }
     else {
-        showText = <div>{props.castName}</div>
+        showText = <h2 className="title"> {props.castName} </h2>
     }
 
     if (props.actorType == '1') {  // 배역
@@ -80,7 +81,7 @@ function CastDetail(props) {
             <>
                 <Row className="justify-content-center">
                     <Col className="text-center" lg="12" md="12">
-                        <h2 className="title"> {showText} </h2>
+                        {showText}
                     </Col>
                 </Row>
                 <br></br>
