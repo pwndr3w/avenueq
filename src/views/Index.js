@@ -20,6 +20,7 @@ import Lovusical from "./index-sections/Lovusical.js";
 import AddMedia from "./index-sections/Addmedia.js";
 import LovusicalSummary from "./index-sections/LovusicalSummary.js";
 import SetCookie from "./index-sections/SetCookie.js";
+import NoticeModal from "./index-sections/NoticeModal.js"
 function Index() {
   React.useEffect(() => {
     document.body.classList.add("index-page");
@@ -38,8 +39,9 @@ function Index() {
       <div className="wrapper">
         <IndexHeader />
       <div className="main">
-       <CookiesProvider>
-         <SetCookie name="test" />
+        <CookiesProvider>
+          <NoticeModal />
+         {/* <SetCookie name="test" /> */}
        </CookiesProvider>
           <LovusicalSummary />
           <About style={{ fontFamily: 'Noto Sans KR, sans-family' }}/>
