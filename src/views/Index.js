@@ -19,6 +19,7 @@ import Synopsis from "./index-sections/Synopsis.js";
 import Lovusical from "./index-sections/Lovusical.js";
 import AddMedia from "./index-sections/Addmedia.js";
 import LovusicalSummary from "./index-sections/LovusicalSummary.js";
+import NoticePopup from "./index-sections/NoticeModal.js";
 function Index() {
   React.useEffect(() => {
     document.body.classList.add("index-page");
@@ -32,11 +33,12 @@ function Index() {
     };
   });
   return (
-    <>
+      <>
       <IndexNavbar />
       <div className="wrapper">
         <IndexHeader />
-        <div className="main">
+          <div className="main">
+          <NoticePopup/>
           <LovusicalSummary />
           <About style={{ fontFamily: 'Noto Sans KR, sans-family' }}/>
           <AddMedia />
