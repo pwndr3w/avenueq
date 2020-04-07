@@ -1,34 +1,40 @@
 // JavaScript source code
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import Draggable from 'react-draggable';
 import { isMobile } from 'react-device-detect';
-import { useCookies, Cookies } from 'react-cookie';
-import SetCookie from "./SetCookie.js";
-import Notice from './Notice.js';
+import { useCookies } from 'react-cookie';
 
 function NoticeModal(){
 
-const [modal, setModal] = useState(true);
-    const [cookie, SetCookie] = useCookies(['modal']);
-
+    const [modal, setModal] = useState(true);
+    const [cookie, setCookie] = useCookies(['modal']);
     const toggle = () => setModal(!modal);
-    const closeForToday = () => SetCookie('modal', true, { path: '/' });
-
-  return (
-    <div>
-      <Modal isOpen={modal} toggle={toggle}>
-        <ModalHeader toggle={toggle}>Modal title</ModalHeader>
-        <ModalBody>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </ModalBody>
-        <ModalFooter>
-          <Button color="primary" onClick={closeForToday}>{'오늘 하루 보지 않기'}</Button>{' '}
-          <Button color="secondary" onClick={toggle}>Cancel</Button>
-        </ModalFooter>
-      </Modal>
-    </div>
-  );
+    const closeForToday = () => {
+        setCookie('modal', true, { path: '/' });
+        toggle();
+    }
+    if (!cookie.modal) {
+        setCookie('modal', false, { path: '/' });
+    }
+    const modalStyle = isMobile ? {}:{
+        position: 'absolute',
+        left: 10 + '%',
+        top: 10 + '%'
+    };
+        return (
+            <div>
+                <Modal isOpen={modal} toggle={toggle} style={modalStyle}>
+                <ModalHeader toggle={toggle}>공지</ModalHeader>
+                <ModalBody>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </ModalBody>
+                <ModalFooter>
+                <Button color="primary" onClick={closeForToday}>오늘 하루 보지 않기</Button>{' '}
+                <Button color="secondary" onClick={toggle}>닫기</Button>
+                </ModalFooter>
+            </Modal>
+            </div>
+        );
 }
 
 export default NoticeModal;
