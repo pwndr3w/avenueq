@@ -1,5 +1,5 @@
 import React from "react";
-
+import { CookiesProvider } from 'react-cookie';
 // reactstrap components
 // import {
 // } from "reactstrap";
@@ -19,7 +19,7 @@ import Synopsis from "./index-sections/Synopsis.js";
 import Lovusical from "./index-sections/Lovusical.js";
 import AddMedia from "./index-sections/Addmedia.js";
 import LovusicalSummary from "./index-sections/LovusicalSummary.js";
-import NoticePopup from "./index-sections/NoticeModal.js";
+import SetCookie from "./index-sections/SetCookie.js";
 function Index() {
   React.useEffect(() => {
     document.body.classList.add("index-page");
@@ -30,15 +30,17 @@ function Index() {
     return function cleanup() {
       document.body.classList.remove("index-page");
       document.body.classList.remove("sidebar-collapse");
-    };
+    }; 
   });
   return (
       <>
       <IndexNavbar />
       <div className="wrapper">
         <IndexHeader />
-          <div className="main">
-          <NoticePopup/>
+      <div className="main">
+       <CookiesProvider>
+         <SetCookie name="test" />
+       </CookiesProvider>
           <LovusicalSummary />
           <About style={{ fontFamily: 'Noto Sans KR, sans-family' }}/>
           <AddMedia />
@@ -51,7 +53,7 @@ function Index() {
           <Lovusical />
         </div>
         <DarkFooter />
-      </div>
+       </div>
     </>
   );
 }
