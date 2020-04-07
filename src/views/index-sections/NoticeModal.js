@@ -10,7 +10,7 @@ function NoticeModal(){
     const [cookie, setCookie] = useCookies(['modal']);
     const toggle = () => setModal(!modal);
     const closeForToday = () => {
-        setCookie('modal', true, { path: '/' });
+        setCookie('modal', true, { path: '/', maxAge: 86400 });
         toggle();
     }
     if (!cookie.modal) {
