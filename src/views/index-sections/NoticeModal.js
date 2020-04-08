@@ -32,8 +32,10 @@ function NoticeModal(){
                             <strong>다소 선정적이거나 폭력적인 장면 및 언사를 삭제하긴 하였으나 원작의 메시지를 살리기 위하여 <span style={{color:'red'}}>15세 이상 관람가 수준으로 조정하여 각색</span></strong>되었습니다. 
                         <br></br><br></br>- 15세 미만의 학생 또는 어린이가 보기에 <strong><u>부적절한 장면, 언어 사용</u></strong>이 있을 수 있으니 부모님께서는 각별히 주의 바랍니다. 
                         <br></br><br></br>- <strong><u>부모님과 동반입장의 경우, 입장은 허용하고 있으나</u></strong> 다시 한번 말씀드리지만 본 극은 15세 이상 관람가임을 알려드립니다.<br></br><br></br>
-                        </span>
-                        <h5 style={{color:'red'}}><strong>신종 코로나 바이러스 감염증 대처 계획 안내</strong></h5> 
+                    </span>
+
+                    <h5 style={{color:'red'}}><strong>신종 코로나 바이러스 감염증 대처 계획 안내</strong></h5> 
+                        
                         <span>
                             2020 러비스 프로젝트{"<애비뉴큐>"}가 공연되는 예술나무씨어터에서는 <strong>신종 코로나 바이러스 감염증 대처</strong>를 아래와 같이 실행합니다. 
                             <br></br><br></br>1. 예술나무씨어터는 코로나 발생 초기부터 <strong>자체방역</strong>을 하고 있습니다. 
