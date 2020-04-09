@@ -38,7 +38,7 @@ const CastingTable = (props) => {
         </tr>
         <tr>
           <th scope="row">4.25(토)</th>
-          <td>15:00</td>
+          <td>15:30</td>
           <td>양희승</td>
           <td>민다희</td>
           <td>양정모</td>
@@ -80,7 +80,7 @@ const CastingTable = (props) => {
         </tr>
         <tr>
           <th scope="row">4.26(일)</th>
-          <td>14:30</td>
+          <td>15:00</td>
           <td>황두현</td>
           <td>이신정</td>
           <td>김연천</td>
