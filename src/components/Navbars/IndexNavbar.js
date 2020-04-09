@@ -47,7 +47,8 @@ function IndexNavbar() {
     };
   });
   const menuTextStyle = {
-    display: 'inline-block'
+    display: 'inline-block',
+    fontSize: '15px'
   }
   const menuAStyle = {
     minWidth: 'max-content'
@@ -123,7 +124,7 @@ function IndexNavbar() {
                   nav
                   onClick={e => e.preventDefault()}
                 >
-                  <i className="fas fa-2x fa-user-friends design_app mr-1" style={menuIconStyle}></i>
+                  {/* <i className="fas fa-2x fa-user-friends design_app mr-1" style={menuIconStyle}></i> */}
                   <h6 style={menuTextStyle}>Teams</h6>
                 </DropdownToggle>
                 <DropdownMenu>
@@ -141,7 +142,7 @@ function IndexNavbar() {
                 <NavLink
                   to="/gallery" tag={Link}
                 >
-                  <i className="far fa-2x fa-images design_app mr-1" style={menuIconStyle}></i>
+                  {/* <i className="far fa-2x fa-images design_app mr-1" style={menuIconStyle}></i> */}
                   <h6 style={menuTextStyle}>Gallery</h6>
                 </NavLink>
               </NavItem>
@@ -149,7 +150,7 @@ function IndexNavbar() {
                 <NavLink
                  href="https://booking.naver.com/booking/12/bizes/20610/items/3381391" target="_blank"
                 >
-                  <i className="fas fa-2x fa-ticket-alt design_app mr-1" style={menuIconStyle}></i>
+                  {/* <i className="fas fa-2x fa-ticket-alt design_app mr-1" style={menuIconStyle}></i> */}
                   <h6 style={menuTextStyle}>Tickets</h6>
                 </NavLink>
               </NavItem>
