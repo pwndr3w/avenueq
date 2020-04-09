@@ -18,13 +18,19 @@
         //outline: 0 !important;
         border: 0.5px solid white !important;
         color: white !important;
-        background-color: transparent !important;
     }
+    
     &:active,
     &.active,
     .open > &.dropdown-toggle {
          @include box-shadow(none);
          outline: 0 !important;
+    }
+    .modal-content .modal-footer > &:hover{
+        @include opacity(1);
+        //outline: 0 !important;
+        border: 0px solid white !important;
+        color: white !important;
     }
 
     &.btn-icon {
@@ -81,6 +87,14 @@
         top: 1px;
     }
 }
+.ticketBtn:hover{
+    @include opacity(1);
+    //outline: 0 !important;
+    border: 0.5px solid white !important;
+    color: white !important;
+    background-color: transparent !important;        
+}
+
 
 // Apply the mixin to the buttons
 // .btn-default { @include btn-styles($default-color, $default-states-color); }

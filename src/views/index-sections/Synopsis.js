@@ -23,7 +23,7 @@ function Synopsis() {
         {/* <Container>
             <Row className="justify-content-center">
             <Col className="text-center" lg="5" md="5" style={{top:'-30%'}}> */}
-              <pre className="mt-5" style={{ color: 'Black', textAlign:'center', marginRight:'auto', marginLeft:'auto', width: isBigScreen?565+'px':90+'vw', whiteSpace:'pre-wrap', fontFamily:'Noto Sans KR' }}>
+              <pre className="mt-5" style={{ color: 'Black', overflow:'hidden', textAlign:'center', marginRight:'auto', marginLeft:'auto', width: isBigScreen?565+'px':90+'vw', whiteSpace:'pre-wrap', fontFamily:'Noto Sans KR' }}>
                뉴욕의 번화가와 고급스러운 유행의 중심지에서 가장 멀리 떨어져있는 거리, 
               {isMobile ? "" : <br></br>}애비뉴 큐(Avenue Q)에 큰 꿈과 얇은 지갑을 가지고 뉴욕에 온 순진한 대학
               {isMobile ? "" : <br></br>}졸업생, 프린스턴이 이사를 왔군요! 

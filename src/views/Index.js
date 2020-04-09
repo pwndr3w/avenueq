@@ -1,5 +1,5 @@
 import React from "react";
-import { CookiesProvider } from 'react-cookie';
+import { CookiesProvider, useCookies} from 'react-cookie';
 // reactstrap components
 // import {
 // } from "reactstrap";
@@ -19,7 +19,6 @@ import Synopsis from "./index-sections/Synopsis.js";
 import Lovusical from "./index-sections/Lovusical.js";
 import AddMedia from "./index-sections/Addmedia.js";
 import LovusicalSummary from "./index-sections/LovusicalSummary.js";
-import SetCookie from "./index-sections/SetCookie.js";
 import NoticeModal from "./index-sections/NoticeModal.js"
 function Index() {
   React.useEffect(() => {
@@ -33,6 +32,8 @@ function Index() {
       document.body.classList.remove("sidebar-collapse");
     }; 
   });
+  const [cookie] = useCookies(['modal']);
+
   return (
       <>
       <IndexNavbar />
@@ -40,15 +41,13 @@ function Index() {
         <IndexHeader />
       <div className="main">
         <CookiesProvider>
-          <NoticeModal />
-         {/* <SetCookie name="test" /> */}
+          {cookie.modal==='true'?'':<NoticeModal />}
        </CookiesProvider>
           <LovusicalSummary />
           <About style={{ fontFamily: 'Noto Sans KR, sans-family' }}/>
           <AddMedia />
           <Synopsis />
           <Carousel />
-          {/* <Cast /> */}
           <CastingCalendar />
           <Notice/>
           <CreativeTeam />

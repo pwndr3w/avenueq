@@ -2,10 +2,6 @@ import React from 'react';
 import { Table, Container, Row, Col } from 'reactstrap';
 import { isMobile } from 'react-device-detect';
 
-const dividerStyle = {
-    marginTop:"-6vh"
-}
-
 const CastingTable = (props) => {
   return (
       <Table responsive style={{ textAlign: 'center', color:"white", whiteSpace:"nowrap" }}>
@@ -42,7 +38,7 @@ const CastingTable = (props) => {
         </tr>
         <tr>
           <th scope="row">4.25(토)</th>
-          <td>15:00</td>
+          <td>15:30</td>
           <td>양희승</td>
           <td>민다희</td>
           <td>양정모</td>
@@ -84,7 +80,7 @@ const CastingTable = (props) => {
         </tr>
         <tr>
           <th scope="row">4.26(일)</th>
-          <td>14:30</td>
+          <td>15:00</td>
           <td>황두현</td>
           <td>이신정</td>
           <td>김연천</td>
@@ -116,6 +112,20 @@ const CastingTable = (props) => {
 }
 
 function CastingCalendar() {
+  // React.useEffect(() => {
+  //   if (
+  //     !document
+  //       .getElementById("sliderRegular")
+  //       .classList.contains("noUi-target")
+  //   ) {
+  //     Slider.create(document.getElementById("sliderRegular"), {
+  //       start: [0],
+  //       connect: [true, false],
+  //       step: 0.5,
+  //       range: { min: 0, max: document.getElementsByClassName('table-responsive'). }
+  //     });
+  //   }
+  // });
     return (
         <>
     <div
@@ -131,12 +141,11 @@ function CastingCalendar() {
             </Row>    
             {isMobile ?
               <>
-                <Row className="justify-content-between">
-                  <Col className="text-center" lg="3" md="3" sm="3" xs="3">
-                    <img src={require('assets/img/cast_leftbtn.png')} ></img>              
-                  </Col>
-                  <Col className="text-center" lg="3" md="3" sm="3" xs="3">
-                    <img src={require('assets/img/cast_rightbtn.png')} ></img>              
+                <div className="slider" id="sliderRegular"></div>
+                <Row className="justify-content-center">
+                  <Col className="text-center" lg="10" md="10" sm="10" xs="10">
+                    <span style={{color:"white"}}>{"<<하단을 좌우로 움직이시면 전체 캘린더를 보실 수 있습니다>>"}</span>
+                    {/* <img src={require('assets/img/cast_leftbtn.png')}></img>               */}
                   </Col>
                 </Row>                    
               </>
@@ -144,8 +153,8 @@ function CastingCalendar() {
             ""
             }
                     <br></br>
-                    <br></br>
-            <CastingTable />        
+            <br></br>
+            <CastingTable />     
         </Container>
       </div>
         </>
