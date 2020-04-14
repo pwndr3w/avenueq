@@ -34,7 +34,7 @@ function Notice() {
                     <Row className="justify-content-center">
                         <Col className="text-center" lg="12" md="12" sm="12" xs="12">
                             <h4 align="left" style={{lineHeight:'40px'}}>
-                                극 장 : 구로 예술나무씨어터<br></br>
+                                극 장 : 예술나무씨어터<br></br>
                                 주 최 : 러뷰지컬<br></br>
                                 후 원 : (주)아라핀, (주)원데이원커뮤니케이션<br></br>
                                 예매 가격 : 13,000원<br></br>
